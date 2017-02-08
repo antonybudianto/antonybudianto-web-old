@@ -1,0 +1,53 @@
+.LandingPage-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: deepskyblue;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.LandingPage-img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid skyblue;
+}
+
+.LandingPage-img > img {
+  display: block;
+  width: 160px;
+  height: 190px;
+}
+
+.LandingPage-header {
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.LandingPage-intro {
+  font-size: large;
+  text-align: center;
+}
+
+.LandingPage-social {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 30pt;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
