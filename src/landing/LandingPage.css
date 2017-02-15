@@ -25,7 +25,6 @@
 }
 
 .LandingPage-header {
-  padding: 10px;
   color: white;
   display: flex;
   align-items: center;
@@ -40,14 +39,20 @@
 
 .LandingPage-social {
   width: 100vw;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.fa {
+.LandingPage-social .fa {
   font-size: 30pt;
   color: white;
   padding: 10px;
   text-align: center;
+}
+
+.btn-outline-primary {
+  border: 1px solid white;
+  color: white;
 }

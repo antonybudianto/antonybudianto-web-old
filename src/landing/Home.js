@@ -11,6 +11,11 @@ const HomeSection = () =>
         <div className="LandingPage-intro">
         <p>Software engineer and Open source contributor</p>
         </div>
+        <div>
+            <a href="cv.pdf" download className="btn btn-outline-primary">
+                <i className="fa fa-file-text-o"></i> <span>Download CV</span>
+            </a>
+        </div>
         <div className="LandingPage-social">
         <a href="https://github.com/antonybudianto">
             <i className="fa fa-github-square"></i>
