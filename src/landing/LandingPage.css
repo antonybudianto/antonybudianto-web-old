@@ -10,9 +10,11 @@
 }
 
 .LandingPage-img {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 150px;
   height: 150px;
+  margin-bottom: 20px;
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid skyblue;
