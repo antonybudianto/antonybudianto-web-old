@@ -1,0 +1,55 @@
+.section {
+  background-color: steelblue;
+  color: white;
+  padding: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.portfolio img {
+  width: 80%;
+  margin: auto;
+}
+
+.portfolio hr {
+  height: 0;
+  border-bottom: 1px solid white;
+}
+
+.portfolio a {
+  color: lightblue;
+}
+
+.portfolio-label {
+  position: absolute;
+  background-color: darkslategrey;
+  bottom: 0;
+  left: 10%;
+  height: 40px;
+  width: 80%;
+  overflow: hidden;
+  padding: 10px;
+  transition: all 2s;
+}
+
+.portfolio-description {
+  margin-top: 5px;
+}
+
+.portfolio-label:hover {
+  height: 100%;
+  transition: all 1s;
+}
+
+.heading h2 {
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0px;
+}
