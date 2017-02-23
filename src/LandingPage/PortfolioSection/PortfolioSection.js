@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase';
 
-import './PortofolioSection.css';
+import './PortfolioSection.css';
 
-class PortofolioSection extends Component {
+class PortfolioSection extends Component {
   componentWillMount() {
     this.state = {
       loading: true,
@@ -59,4 +59,4 @@ class PortofolioSection extends Component {
   }
 }
 
-export default PortofolioSection;
+export default PortfolioSection;

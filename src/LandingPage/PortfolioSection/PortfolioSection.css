@@ -40,6 +40,11 @@
   transition: all 0.5s;
 }
 
+.portfolio:hover > .portfolio-image-wrapper > img {
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
 .heading h2 {
   text-align: center;
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 
 import HomeSection from './HomeSection/HomeSection';
-import PortofolioSection from './PortfolioSection/PortofolioSection';
+import PortfolioSection from './PortfolioSection/PortfolioSection';
 import './LandingPage.css';
 
 const LandingPage = () =>
     <div>
         <HomeSection></HomeSection>
-        <PortofolioSection></PortofolioSection>
+        <PortfolioSection></PortfolioSection>
     </div>
 
 export default LandingPage;
