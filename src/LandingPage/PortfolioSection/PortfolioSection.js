@@ -14,8 +14,6 @@ class PortfolioSection extends Component {
     db.ref('projects')
     .once('value')
     .then(snapshot => {
-      console.log(snapshot.val());
-
       this.setState({
         loading: false,
         portofolios: snapshot.val()
