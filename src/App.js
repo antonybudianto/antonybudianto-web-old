@@ -3,8 +3,8 @@ import { Route, Router, browserHistory } from 'react-router';
 import * as firebase from 'firebase';
 
 import './App.css';
-import LandingPage from './landing-page/LandingPage';
-import NotFoundPage from './error-page/NotFoundPage';
+import LandingPage from './LandingPage/LandingPage';
+import NotFoundPage from './ErrorPage/NotFoundPage/NotFoundPage';
 
 class App extends Component {
   componentWillMount() {

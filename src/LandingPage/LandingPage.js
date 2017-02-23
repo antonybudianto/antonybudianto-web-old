@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HomeSection from './sections/HomeSection';
-import PortofolioSection from './sections/PortofolioSection';
+import HomeSection from './HomeSection/HomeSection';
+import PortofolioSection from './PortfolioSection/PortofolioSection';
 import './LandingPage.css';
 
 const LandingPage = () =>
