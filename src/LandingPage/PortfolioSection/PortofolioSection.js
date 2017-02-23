@@ -42,15 +42,12 @@ class PortofolioSection extends Component {
             {
               this.state.portofolios.map(p =>
                 <div className="col-md-4 no-padding portfolio" key={p.id}>
-                  <img
-                  className="img-fluid"
-                  src="http://blogs.ubc.ca/CourseBlogSample01/wp-content/themes/thesis/rotator/sample-1.jpg" alt="Card portfolio"/>
-                  <div className="portfolio-label">
-                    {p.name}
-
-                    <div className="portfolio-description">
-                      {p.description} <hr/>
-                      <a href={p.url}>{p.url}</a>
+                  <div className="portfolio-image-wrapper">
+                    <img
+                    className="img-responsive img-thumbnail"
+                    src={p.imageUrl} alt="Coming soon"/>
+                    <div className="portfolio-label">
+                      <a href={p.url}>{p.name}</a>
                     </div>
                   </div>
                 </div>

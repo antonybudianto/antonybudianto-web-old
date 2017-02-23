@@ -5,45 +5,39 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.heading {
+  margin-bottom: 50px;
+}
+
 .portfolio {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 10px;
 }
 
 .portfolio img {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
-.portfolio hr {
-  height: 0;
-  border-bottom: 1px solid white;
-}
-
 .portfolio a {
-  color: lightblue;
+  color: aliceblue;
 }
 
 .portfolio-label {
   position: absolute;
   background-color: darkslategrey;
-  bottom: 0;
-  left: 10%;
+  bottom: 0px;
   height: 40px;
-  width: 80%;
   overflow: hidden;
   padding: 10px;
   transition: all 2s;
+  opacity: 0;
 }
 
-.portfolio-description {
-  margin-top: 5px;
-}
-
-.portfolio-label:hover {
-  height: 100%;
-  transition: all 1s;
+.portfolio:hover > .portfolio-image-wrapper > .portfolio-label {
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .heading h2 {
