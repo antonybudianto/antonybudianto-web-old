@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Route, Router, browserHistory } from 'react-router';
 import * as firebase from 'firebase';
 
 import './App.css';
-import LandingPage from './landing/LandingPage';
+import LandingPage from './landing-page/LandingPage';
+import NotFoundPage from './error-page/NotFoundPage';
 
 class App extends Component {
   componentWillMount() {
@@ -19,9 +21,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <LandingPage></LandingPage>
-      </div>
+      <Router history={browserHistory}>
+        <Route path="/" component={LandingPage}></Route>
+        <Route path="*" component={NotFoundPage}></Route>
+      </Router>
     );
   }
 }
