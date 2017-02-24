@@ -27,22 +27,31 @@
 .portfolio-label {
   position: absolute;
   background-color: darkslategrey;
-  bottom: 0px;
   height: 40px;
   overflow: hidden;
   padding: 10px;
   transition: all 2s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
   opacity: 0;
 }
 
 .portfolio:hover > .portfolio-image-wrapper > .portfolio-label {
   opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
   transition: all 0.5s;
 }
 
 .portfolio:hover > .portfolio-image-wrapper > img {
   opacity: 0.4;
   transition: all 0.5s;
+}
+
+.portfolio-image-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .heading h2 {
