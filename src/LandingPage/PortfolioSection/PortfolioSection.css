@@ -13,6 +13,7 @@
   text-align: center;
 }
 
-.no-padding {
-  padding: 0px;
+.portfolio-container {
+  display: flex;
+  justify-content: center;
 }

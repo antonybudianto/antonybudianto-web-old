@@ -3,3 +3,7 @@
 .App {
 
 }
+
+.no-padding {
+  padding: 0px;
+}
