@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import browserHistory from 'react-router/lib/browserHistory'
 import Route from 'react-router/lib/Route'
 import Router from 'react-router/lib/Router'
-import * as firebase from 'firebase';
+import * as firebase from 'firebase/app';
 
 import './App.css';
 import LandingPage from './LandingPage/LandingPage';
