@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase';
 
 import './PortfolioSection.css';
+import Portfolio from './Portfolio/Portfolio';
 
 class PortfolioSection extends Component {
   componentWillMount() {
@@ -39,16 +40,7 @@ class PortfolioSection extends Component {
             }
             {
               this.state.portofolios.map(p =>
-                <div className="col-md-4 no-padding portfolio" key={p.id}>
-                  <div className="portfolio-image-wrapper">
-                    <img
-                    className="img-responsive img-thumbnail"
-                    src={p.imageUrl} alt="Coming soon"/>
-                    <div className="portfolio-label">
-                      <a href={p.url}>{p.name}</a>
-                    </div>
-                  </div>
-                </div>
+                <Portfolio key={p.id} portfolio={p}></Portfolio>
               )
             }
         </div>

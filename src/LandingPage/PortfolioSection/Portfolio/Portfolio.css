@@ -1,0 +1,44 @@
+.portfolio {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.portfolio a {
+  color: aliceblue;
+}
+
+.portfolio > .portfolio-image-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio > .portfolio-image-wrapper > img {
+  width: 90%;
+  margin: auto;
+}
+
+.portfolio:hover > .portfolio-image-wrapper > img {
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+.portfolio > .portfolio-image-wrapper > .portfolio-label {
+  position: absolute;
+  background-color: darkslategrey;
+  height: 40px;
+  overflow: hidden;
+  padding: 10px;
+  transition: all 2s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+}
+
+.portfolio:hover > .portfolio-image-wrapper > .portfolio-label {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.5s;
+}
