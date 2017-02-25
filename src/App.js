@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Router, browserHistory } from 'react-router';
+import browserHistory from 'react-router/lib/browserHistory'
+import Route from 'react-router/lib/Route'
+import Router from 'react-router/lib/Router'
 import * as firebase from 'firebase';
 
 import './App.css';
