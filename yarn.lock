@@ -4211,9 +4211,9 @@ react-router@^3.0.2:
     loose-envify "^1.2.0"
     warning "^3.0.0"
 
-react-scripts@0.9.2:
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-0.9.2.tgz#5f8454ceb561524641322c73bee8341f1d4deac7"
+react-scripts@0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-0.9.3.tgz#d1196a369b072c17b1122054de6a056ce3e08068"
   dependencies:
     autoprefixer "6.7.2"
     babel-core "6.22.1"
