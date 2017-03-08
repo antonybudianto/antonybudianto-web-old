@@ -11,10 +11,10 @@ const HomeSection = () =>
         <div className="LandingPage-intro">
         <p>Software engineer and Open source contributor</p>
         </div>
-        <div>
+        <div className="LandingPage-action">
             <a href="cv.pdf" download className="btn btn-outline-primary">
                 <i className="fa fa-file-text-o"></i> <span>Download CV</span>
-            </a> &nbsp;
+            </a>
             <a href="#portfolio" className="btn btn-outline-primary">
                 <i className="fa fa-picture-o"></i> <span>View portfolio</span>
             </a>

@@ -20,6 +20,11 @@
   border: 5px solid skyblue;
 }
 
+.LandingPage-action > .btn {
+  margin: 3px;
+  margin-bottom: 5px;
+}
+
 .LandingPage-img > img {
   display: block;
   width: 160px;
@@ -37,6 +42,7 @@
 .LandingPage-intro {
   font-size: large;
   text-align: center;
+  padding: 2px;
 }
 
 .LandingPage-social {
