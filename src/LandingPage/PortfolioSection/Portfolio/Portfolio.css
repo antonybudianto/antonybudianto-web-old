@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .portfolio a {
@@ -32,9 +32,9 @@
   top: 50%;
   padding: 10px;
   overflow: hidden;
-  background-color: darkslategrey;
+  text-align: center;
+  background-color: black;
   border: 2px solid white;
-  border-radius: 5px;
   transition: all 2s;
   transform: translate(-50%, -50%) scale(2);
 }
