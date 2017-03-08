@@ -31,7 +31,7 @@ class PortfolioSection extends Component {
     return (
       <div className="section">
         <div className="heading">
-            <h2>Portfolio</h2>
+            <h2 id="portfolio">Portfolio</h2>
         </div>
         <div className="row portfolio-container">
             {

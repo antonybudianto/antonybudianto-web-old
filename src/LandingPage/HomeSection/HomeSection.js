@@ -14,6 +14,9 @@ const HomeSection = () =>
         <div>
             <a href="cv.pdf" download className="btn btn-outline-primary">
                 <i className="fa fa-file-text-o"></i> <span>Download CV</span>
+            </a> &nbsp;
+            <a href="#portfolio" className="btn btn-outline-primary">
+                <i className="fa fa-picture-o"></i> <span>View portfolio</span>
             </a>
         </div>
         <div className="LandingPage-social">
