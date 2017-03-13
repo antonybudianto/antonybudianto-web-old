@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import browserHistory from 'react-router/lib/browserHistory'
-import Route from 'react-router/lib/Route'
-import Router from 'react-router/lib/Router'
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
 import * as firebase from 'firebase/app';
 
 import './App.css';
@@ -23,9 +25,13 @@ class App extends Component {
 
   render() {
     return (
-      <Router history={browserHistory}>
-        <Route path="/" component={LandingPage}></Route>
-        <Route path="*" component={NotFoundPage}></Route>
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/" component={LandingPage}></Route>
+            <Route component={NotFoundPage}></Route>
+          </Switch>
+        </div>
       </Router>
     );
   }
