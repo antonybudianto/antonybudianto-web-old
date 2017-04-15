@@ -13,7 +13,7 @@ class PortfolioSection extends Component {
     };
 
     let db = firebase.database();
-    db.ref('projects')
+    db.ref('portfolios')
     .once('value')
     .then(snapshot => {
       this.setState({
@@ -31,7 +31,7 @@ class PortfolioSection extends Component {
     return (
       <div className="section">
         <div className="heading">
-            <h2 id="portfolio">Portfolio</h2>
+            <h2 id="portfolio"><a style={{color: 'white'}} href="#portfolio"><i className="fa fa-bookmark"></i> Portfolio</a></h2>
         </div>
         <div className="row portfolio-container">
             {
