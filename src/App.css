@@ -7,3 +7,15 @@ body {
 .no-padding {
   padding: 0px;
 }
+
+.with-header {
+  margin-top: 50px;
+}
+
+.btn-menu.btn-link, .white-link {
+  color: white;
+}
+
+.btn-menu.btn-link.active {
+  color: skyblue;
+}
