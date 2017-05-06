@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase/app';
 import 'firebase/database';
 
-import './PortfolioSection.css';
+import './PortfolioPage.css';
 import Portfolio from './Portfolio/Portfolio';
 
-class PortfolioSection extends Component {
+class PortfolioPage extends Component {
   state = {
     loading: true,
     portofolios: []
@@ -50,4 +50,4 @@ class PortfolioSection extends Component {
   }
 }
 
-export default PortfolioSection;
+export default PortfolioPage;

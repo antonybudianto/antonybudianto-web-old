@@ -8,6 +8,7 @@ import * as firebase from 'firebase/app';
 
 import './App.css';
 import LandingPage from './LandingPage/LandingPage';
+import PortfolioPage from './PortfolioPage/PortfolioPage';
 import NotFoundPage from './ErrorPage/NotFoundPage/NotFoundPage';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
         <div>
           <Switch>
             <Route exact path="/" component={LandingPage}></Route>
+            <Route path="/portfolio" component={PortfolioPage}></Route>
             <Route component={NotFoundPage}></Route>
           </Switch>
         </div>
