@@ -3,7 +3,7 @@ import React from 'react';
 import './Portfolio.css';
 
 const Portfolio = ({portfolio}) =>
-  <div className="col-md-4 no-padding portfolio" key={portfolio.id}>
+  <div className="col-md-4 no-padding portfolio">
     <div className="portfolio-image-wrapper">
       <img
       className="img-responsive img-thumbnail"

@@ -6,12 +6,12 @@ import './PortfolioSection.css';
 import Portfolio from './Portfolio/Portfolio';
 
 class PortfolioSection extends Component {
-  componentWillMount() {
-    this.state = {
-      loading: true,
-      portofolios: []
-    };
+  state = {
+    loading: true,
+    portofolios: []
+  };
 
+  componentDidMount() {
     let db = firebase.database();
     db.ref('portfolios')
     .once('value')
