@@ -19,3 +19,9 @@ body {
 .btn-menu.btn-link.active {
   color: skyblue;
 }
+
+@media (max-width: 600px) {
+  .with-header {
+    margin-top: 0;
+  }
+}

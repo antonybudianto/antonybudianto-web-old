@@ -1,31 +1,16 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import './AppHeader.css';
+
 const AppHeader = () =>
-  <div style={{
-    display: 'flex',
-    width: '100%',
-    height: '50px',
-    zIndex: 1,
-    left: 0,
-    top: 0,
-    position: 'fixed',
-    justifyContent: 'space-between',
-    backgroundColor: 'black',
-    color: 'white',
-    textAlign: 'right'
-  }}>
+  <div className="AppHeader">
     <div style={{
       padding: 5
     }}>
       <Link to="/" className="btn btn-link btn-menu">Antony Budianto</Link>
     </div>
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-end',
-      padding: 5
-    }}>
+    <div className="AppHeaderMenu">
       <NavLink exact activeClassName="active" to="/" className="btn btn-link btn-menu">
         <span>Home</span>
       </NavLink>
@@ -33,7 +18,7 @@ const AppHeader = () =>
         <span>Portfolio</span>
       </NavLink>
       <div style={{
-        marginLeft: 20
+        margin: 10
       }}>
         <a style={{
           fontSize: 35
