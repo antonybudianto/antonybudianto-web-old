@@ -13,7 +13,9 @@ class ImageLoader extends Component {
 
     render() {
       return (
-        <div>
+        <div style={{
+          textAlign: 'center'
+        }}>
           { this.state.loading ? this.props.children : null }
           <img className={!this.state.loading ? this.props.className : null}
             src={this.props.src} alt={this.props.alt} onLoad={this.handleImageLoad.bind(this)} />
