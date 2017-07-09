@@ -1,3 +1,14 @@
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .portfolio {
   display: flex;
   align-items: center;
@@ -18,6 +29,7 @@
 .portfolio > .portfolio-image-wrapper img {
   width: 90%;
   margin: auto;
+  animation: 3s ease 0s 1 slideInFromBottom;
 }
 
 .portfolio:hover > .portfolio-image-wrapper img {
