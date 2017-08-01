@@ -31,7 +31,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage}></Route>
             <Route path="/portfolio" component={PortfolioPage}></Route>
-            <Route component={NotFoundPage}></Route>
+            <Route path="*" component={NotFoundPage}></Route>
           </Switch>
         </div>
       </Router>

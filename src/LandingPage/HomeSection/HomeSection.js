@@ -12,7 +12,7 @@ const HomeSection = () =>
         <p>Software engineer and Open source contributor</p>
         </div>
         <div className="LandingPage-action">
-            <a href="cv.pdf" download className="btn btn-outline-primary">
+            <a href="cv.pdf" download className="btn btn-primary">
                 <i className="fa fa-file-text-o"></i> <span>Download CV</span>
             </a>
         </div>

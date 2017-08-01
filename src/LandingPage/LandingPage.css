@@ -9,6 +9,14 @@
   font-family: 'Raleway', sans-serif;
 }
 
+@media (max-width: 800px) {
+  .LandingPage-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: auto;
+  }
+}
+
 .LandingPage-img {
   display: flex;
   justify-content: center;

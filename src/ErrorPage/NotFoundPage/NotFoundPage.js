@@ -9,7 +9,7 @@ const NotFoundPage = () =>
       Looks like you're lost...
     </div>
     <div className="action">
-      <a className="btn btn-outline-primary" href="/">Guide me to the right path!</a>
+      <a className="btn btn-primary" href="/">Guide me to the right path!</a>
     </div>
   </div>
 
