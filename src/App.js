@@ -29,9 +29,9 @@ class App extends Component {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" component={LandingPage}></Route>
-            <Route path="/portfolio" component={PortfolioPage}></Route>
-            <Route path="*" component={NotFoundPage}></Route>
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/portfolio" component={PortfolioPage} />
+            <Route component={NotFoundPage} />
           </Switch>
         </div>
       </Router>
