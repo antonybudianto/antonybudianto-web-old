@@ -7,9 +7,22 @@ import {
 import * as firebase from 'firebase/app';
 
 import './App.css';
-import LandingPage from './LandingPage/LandingPage';
 import PortfolioPage from './PortfolioPage/PortfolioPage';
 import NotFoundPage from './ErrorPage/NotFoundPage/NotFoundPage';
+import LandingPage from './LandingPage/LandingPage';
+
+// TODO: apply code split when react-snapshot ready
+// import LoadableComponent from './common/LoadableComponent';
+
+// const PortfolioPage = LoadableComponent({
+//   loader: () => import('./PortfolioPage/PortfolioPage')
+// });
+// const NotFoundPage = LoadableComponent({
+//   loader: () => import('./ErrorPage/NotFoundPage/NotFoundPage')
+// });
+// const LandingPage = LoadableComponent({
+//   loader: () => import('./LandingPage/LandingPage')
+// });
 
 class App extends Component {
   componentWillMount() {
@@ -21,7 +34,10 @@ class App extends Component {
       storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
       messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_ID
     };
-    firebase.initializeApp(config);
+
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config);
+    }
   }
 
   render() {

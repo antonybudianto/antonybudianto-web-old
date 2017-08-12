@@ -13,8 +13,9 @@
     "font-awesome": "^4.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-loadable": "^4.0.4",
     "react-router-dom": "^4.1.2",
-    "react-snapshot": "1.1.0"
+    "react-snapshot": "next"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,6 +26,6 @@
     "deploy": "firebase deploy"
   },
   "reactSnapshot": {
-    "snapshotDelay": 1000
+    "snapshotDelay": 10000
   }
 }
