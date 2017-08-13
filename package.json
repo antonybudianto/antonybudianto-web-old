@@ -1,8 +1,9 @@
 {
   "name": "antonybudianto-web",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
+    "prep": "1.6.0",
     "enzyme": "^2.9.1",
     "react-scripts": "1.0.11",
     "react-test-renderer": "^15.6.1"
@@ -14,18 +15,15 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-loadable": "^4.0.4",
-    "react-router-dom": "^4.1.2",
-    "react-snapshot": "next"
+    "react-router-dom": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:snapshot": "npm run build && react-snapshot",
+    "build:prep": "npm run build && npm run prep",
+    "prep": "prep build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy"
-  },
-  "reactSnapshot": {
-    "snapshotDelay": 10000
   }
 }

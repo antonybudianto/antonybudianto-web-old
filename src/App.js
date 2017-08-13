@@ -11,7 +11,8 @@ import PortfolioPage from './PortfolioPage/PortfolioPage';
 import NotFoundPage from './ErrorPage/NotFoundPage/NotFoundPage';
 import LandingPage from './LandingPage/LandingPage';
 
-// TODO: apply code split when react-snapshot ready
+// TODO: apply code split when prep is ready
+// Currently it's ok but have console errors...
 // import LoadableComponent from './common/LoadableComponent';
 
 // const PortfolioPage = LoadableComponent({
@@ -26,7 +27,6 @@ import LandingPage from './LandingPage/LandingPage';
 
 class App extends Component {
   componentWillMount() {
-    // Initialize Firebase
     const config = {
       apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
       authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
