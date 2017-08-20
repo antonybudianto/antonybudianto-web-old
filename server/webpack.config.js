@@ -2,7 +2,8 @@ var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/app.js',
+  // entry: './src/index.js',
   resolve: {
     extensions: ['.js', '.jsx']
   },
