@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
@@ -42,15 +41,13 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/portfolio" component={PortfolioPage} />
-            <Route component={NotFoundPage} />
-          </Switch>
-        </div>
-      </Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/portfolio" component={PortfolioPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </div>
     );
   }
 }
