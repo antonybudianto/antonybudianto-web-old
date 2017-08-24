@@ -2,8 +2,11 @@ var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  entry: './src/app.js',
-  // entry: './src/index.js',
+  // For Firebase function/package bundle
+  // entry: './src/app.js',
+
+  // For standalone expree bundle
+  entry: './src/index.js',
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -24,7 +27,13 @@ module.exports = {
         exclude: /node_modules/,
         loaders: 'babel-loader',
         options: {
-          presets: ['env', 'react-app']
+          presets: ['env', 'react-app'],
+          plugins: [
+            [require.resolve('babel-plugin-import-inspector'), {
+              serverSideRequirePath: true,
+              webpackRequireWeakId: true
+            }]
+          ]
         }
       },
       {

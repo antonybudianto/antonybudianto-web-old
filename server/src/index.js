@@ -2,7 +2,8 @@ if (process.env.NODE_ENV === 'development') {
   require('ignore-styles');
   require('babel-register')({
     ignore: /\/(build|node_modules)\//,
-    presets: ['env', 'react-app']
+    presets: ['env', 'react-app'],
+    plugins: ['dynamic-import-node']
   });
   console.log('Babel registered!');
 }
