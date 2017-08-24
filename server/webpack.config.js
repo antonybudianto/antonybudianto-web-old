@@ -3,10 +3,10 @@ var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   // For Firebase function/package bundle
-  // entry: './src/app.js',
+  entry: './src/app.js',
 
-  // For standalone expree bundle
-  entry: './src/index.js',
+  // For standalone express bundle
+  // entry: './src/index.js',
   resolve: {
     extensions: ['.js', '.jsx']
   },
