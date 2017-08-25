@@ -8,7 +8,7 @@ import * as firebase from 'firebase/app';
 import './App.css';
 // import PortfolioPage from './PortfolioPage/PortfolioPage';
 // import NotFoundPage from './ErrorPage/NotFoundPage/NotFoundPage';
-// import LandingPage from './LandingPage/LandingPage';
+import LandingPage from './LandingPage/LandingPage';
 
 // TODO: apply code split when prep is ready
 // Currently it's ok but have console errors...
@@ -19,9 +19,6 @@ const PortfolioPage = LoadableComponent({
 });
 const NotFoundPage = LoadableComponent({
   loader: () => import('./ErrorPage/NotFoundPage/NotFoundPage')
-});
-const LandingPage = LoadableComponent({
-  loader: () => import('./LandingPage/LandingPage')
 });
 
 class App extends Component {
