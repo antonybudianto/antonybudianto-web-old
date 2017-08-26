@@ -20,6 +20,10 @@ body {
   color: skyblue;
 }
 
+.link-icon > .link-text {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .with-header {
     margin-top: 0;
