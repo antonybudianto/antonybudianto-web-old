@@ -13,6 +13,7 @@ module.exports = {
   output: {
     path: __dirname + '/build',
     filename: 'bundle.js',
+    chunkFilename: '[id].[hash].chunk.js',
     libraryTarget: 'commonjs2'
   },
   target: 'node',
