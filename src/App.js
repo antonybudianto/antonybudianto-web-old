@@ -5,14 +5,10 @@ import {
 } from 'react-router-dom';
 import * as firebase from 'firebase/app';
 
-import './App.css';
-// import PortfolioPage from './PortfolioPage/PortfolioPage';
-// import NotFoundPage from './ErrorPage/NotFoundPage/NotFoundPage';
 import LandingPage from './LandingPage/LandingPage';
-
-// TODO: apply code split when prep is ready
-// Currently it's ok but have console errors...
 import LoadableComponent from './common/LoadableComponent';
+
+import './App.css';
 
 const PortfolioPage = LoadableComponent({
   loader: () => import('./PortfolioPage/PortfolioPage')
