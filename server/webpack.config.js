@@ -1,12 +1,13 @@
 var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
+var NodemonPlugin = require('nodemon-webpack-plugin');
 
 module.exports = {
   // For Firebase function/package bundle
-  entry: './src/app.js',
+  // entry: './src/app.js',
 
   // For standalone express bundle
-  // entry: './src/index.js',
+  entry: './src/index.js',
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -43,7 +44,9 @@ module.exports = {
       }
     ],
   },
-  plugins: [
+  plugins: process.env.NODE_ENV === 'production' ? [
     new webpack.optimize.UglifyJsPlugin()
+  ] : [
+    new NodemonPlugin()
   ]
 }
