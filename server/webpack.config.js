@@ -2,23 +2,29 @@ var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 var NodemonPlugin = require('nodemon-webpack-plugin');
 
+function isProd(valProd, valDev) {
+  return process.env.NODE_ENV === 'production' ? valProd : valDev;
+}
+
 module.exports = {
   // For Firebase function/package bundle
-  // entry: './src/app.js',
+  entry: './src/app.js',
 
   // For standalone express bundle
-  entry: './src/index.js',
+  // entry: './src/index.js',
   resolve: {
     extensions: ['.js', '.jsx']
   },
   output: {
     path: __dirname + '/build',
     filename: 'bundle.js',
-    chunkFilename: '[id].[hash].chunk.js',
+    chunkFilename: isProd('[id].[hash].chunk.js', '[id].chunk.js'),
     libraryTarget: 'commonjs2'
   },
   target: 'node',
-  externals: [nodeExternals()],
+  externals: [
+    nodeExternals()
+  ],
   node: {
     __dirname: false
   },
@@ -44,9 +50,9 @@ module.exports = {
       }
     ],
   },
-  plugins: process.env.NODE_ENV === 'production' ? [
-    new webpack.optimize.UglifyJsPlugin()
-  ] : [
-    new NodemonPlugin()
-  ]
+  plugins: isProd([
+      new webpack.optimize.UglifyJsPlugin()
+    ], [
+      new NodemonPlugin()
+    ])
 }

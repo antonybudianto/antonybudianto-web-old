@@ -2,10 +2,13 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "dependencies": {
-    "create-react-app-express": "0.6.0",
+    "create-react-app-express": "0.6.2",
     "firebase-admin": "~5.2.1",
     "firebase-functions": "^0.6.2",
     "import-inspector": "^2.0.0",
+    "invariant": "^2.2.2",
+    "path-to-regexp": "^2.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "4.2.2"

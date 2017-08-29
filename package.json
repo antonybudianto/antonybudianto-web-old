@@ -3,10 +3,11 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "prep": "1.6.0",
     "enzyme": "^2.9.1",
-    "react-scripts": "1.0.11",
-    "react-test-renderer": "^15.6.1"
+    "prep": "1.6.0",
+    "react-scripts": "1.0.12",
+    "react-test-renderer": "^15.6.1",
+    "rimraf": "^2.6.1"
   },
   "dependencies": {
     "bootswatch": "^3.3.7",
@@ -19,12 +20,15 @@
   },
   "scripts": {
     "copy:index": "cp ./build/index.html ./functions/build/index.html",
+    "copy:server": "cp -a ./dist/server ./functions/server",
+    "copy": "npm run copy:index && npm run copy:server",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:prep": "npm run build && npm run prep",
     "prep": "prep build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "clean": "rimraf build dist server/build functions/server functions/build"
   }
 }
