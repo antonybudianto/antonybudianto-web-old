@@ -290,9 +290,9 @@ create-error-class@^3.0.2:
   dependencies:
     capture-stack-trace "^1.0.0"
 
-create-react-app-express@0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/create-react-app-express/-/create-react-app-express-0.6.2.tgz#cb8caacfb43ea625267387480422e63fbe0e1972"
+create-react-app-express@0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/create-react-app-express/-/create-react-app-express-0.6.3.tgz#802e57fe3a4c73bac0d431d7afc1429ddd73e993"
   dependencies:
     body-parser "^1.17.2"
     compression "^1.7.0"
@@ -494,9 +494,9 @@ firebase-admin@~5.2.1:
     jsonwebtoken "7.1.9"
     node-forge "0.7.1"
 
-firebase-functions@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-0.6.2.tgz#dbf0d28fdafba5150d0c877fcdb2f13b022fea9e"
+firebase-functions@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-0.6.3.tgz#2b8d37b6383395f591974baf96cd692ec429bd85"
   dependencies:
     "@types/express" "^4.0.33"
     "@types/jsonwebtoken" "^7.1.32"

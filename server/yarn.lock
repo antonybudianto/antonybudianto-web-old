@@ -1008,9 +1008,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-app-express@0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/create-react-app-express/-/create-react-app-express-0.6.2.tgz#cb8caacfb43ea625267387480422e63fbe0e1972"
+create-react-app-express@0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/create-react-app-express/-/create-react-app-express-0.6.4.tgz#0d0cd0c4627648e741dfb35f91985e22527c653d"
   dependencies:
     body-parser "^1.17.2"
     compression "^1.7.0"
@@ -2220,8 +2220,8 @@ ms@2.0.0:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
 nan@^2.3.0:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.6.2.tgz#e4ff34e6c95fdfb5aecc08de6596f43605a7db45"
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
 
 negotiator@0.6.1:
   version "0.6.1"
