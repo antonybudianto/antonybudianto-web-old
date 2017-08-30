@@ -6,7 +6,7 @@ const { StaticRouter } = require('react-router-dom');
 const { createReactAppExpress } = require('create-react-app-express');
 
 const {default: App} = require('../../src/App');
-const clientBuildPath = path.resolve(__dirname, '..', '..', 'build');
+const clientBuildPath = path.resolve(__dirname, 'client');
 const app = createReactAppExpress({
   clientBuildPath,
   universalRender: handleUniversalRender

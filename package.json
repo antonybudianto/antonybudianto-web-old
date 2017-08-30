@@ -19,9 +19,8 @@
     "react-router-dom": "4.2.2"
   },
   "scripts": {
-    "copy:index": "cp ./build/index.html ./functions/build/index.html",
-    "copy:server": "cp -a ./dist/server ./functions/server",
-    "copy": "npm run copy:index && npm run copy:server",
+    "copy:server": "cp -a ./dist ./functions/server",
+    "copy": "npm run copy:server",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:prep": "npm run build && npm run prep",
