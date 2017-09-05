@@ -22,7 +22,7 @@ function handleUniversalRender(req, res) {
 
   if (context.url) {
     res.redirect(301, context.url);
-    return null;
+    return;
   }
 
   return markup;
