@@ -1,7 +1,7 @@
 const path = require('path');
 
 const React = require('react');
-const { renderToString } = require('react-dom/server');
+const { renderToNodeStream } = require('react-dom/server');
 const { StaticRouter } = require('react-router-dom');
 const { createReactAppExpress } = require('create-react-app-express');
 
@@ -14,7 +14,7 @@ const app = createReactAppExpress({
 
 function handleUniversalRender(req, res) {
   const context = {};
-  const markup = renderToString(
+  const stream = renderToNodeStream(
     <StaticRouter location={req.url} context={context}>
       <App />
     </StaticRouter>
@@ -25,7 +25,7 @@ function handleUniversalRender(req, res) {
     return;
   }
 
-  return markup;
+  return stream;
 }
 
 module.exports = app;
