@@ -17,18 +17,18 @@ const HomeSection = () =>
             </a>
         </div>
         <div className="LandingPage-social">
-        <a href="https://github.com/antonybudianto">
-            <i className="fa fa-github-square"></i>
-        </a>
-        <a href="https://facebook.com/antonybudianto">
-            <i className="fa fa-facebook-square"></i>
-        </a>
-        <a href="https://twitter.com/antonybudianto">
-            <i className="fa fa-twitter-square"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/antonybudianto">
-            <i className="fa fa-linkedin-square"></i>
-        </a>
+            <a aria-label="Github" href="https://github.com/antonybudianto">
+                <i aria-hidden="true" className="fa fa-github-square"></i>
+            </a>
+            <a aria-label="Facebook" href="https://facebook.com/antonybudianto">
+                <i aria-hidden="true" className="fa fa-facebook-square"></i>
+            </a>
+            <a aria-label="Twitter" href="https://twitter.com/antonybudianto">
+                <i aria-hidden="true" className="fa fa-twitter-square"></i>
+            </a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/antonybudianto">
+                <i aria-hidden="true" className="fa fa-linkedin-square"></i>
+            </a>
         </div>
     </div>
 

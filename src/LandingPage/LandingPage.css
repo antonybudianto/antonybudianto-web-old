@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: steelblue;
   color: white;
   font-family: 'Raleway', sans-serif;
 }
@@ -25,7 +24,7 @@
   margin-bottom: 20px;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid skyblue;
+  border: 5px solid slategray;
 }
 
 .LandingPage-action > .btn {

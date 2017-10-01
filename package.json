@@ -1,30 +1,33 @@
 {
   "name": "antonybudianto-web",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
     "enzyme": "^2.9.1",
-    "react-scripts": "1.0.11",
-    "react-test-renderer": "^15.6.1"
+    "prep": "1.6.0",
+    "react-scripts": "1.0.13",
+    "react-test-renderer": "^15.6.1",
+    "rimraf": "^2.6.1"
   },
   "dependencies": {
     "bootswatch": "^3.3.7",
-    "firebase": "^4.2.0",
+    "firebase": "^4.3.0",
     "font-awesome": "^4.7.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2",
-    "react-snapshot": "1.1.0"
+    "react-loadable": "^4.0.4",
+    "react-router-dom": "4.2.2"
   },
   "scripts": {
+    "copy:server": "cp -a ./dist ./functions/server",
+    "copy": "npm run copy:server",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:snapshot": "npm run build && react-snapshot",
+    "build:prep": "npm run build && npm run prep",
+    "prep": "prep build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "firebase deploy"
-  },
-  "reactSnapshot": {
-    "snapshotDelay": 1000
+    "deploy": "firebase deploy",
+    "clean": "rimraf build dist server/build functions/server functions/build"
   }
 }

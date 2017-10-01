@@ -20,7 +20,7 @@ const AppHeader = () =>
       <div style={{
         margin: 10
       }}>
-        <a style={{
+        <a aria-label="Github" style={{
           fontSize: 35
         }} className="white-link" href="https://github.com/antonybudianto">
           <i className="fa fa-github"></i>

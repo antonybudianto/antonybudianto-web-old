@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-body {
-  background-color: lightsteelblue;
-}
-
 .no-padding {
   padding: 0px;
 }
@@ -18,6 +14,10 @@ body {
 
 .btn-menu.btn-link.active {
   color: skyblue;
+}
+
+.link-icon > .link-text {
+  display: none;
 }
 
 @media (max-width: 600px) {
