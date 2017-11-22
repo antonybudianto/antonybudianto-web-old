@@ -4,15 +4,70 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: white;
   font-family: 'Raleway', sans-serif;
 }
 
-@media (max-width: 600px) {
+.LandingPage-section-half {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px
+}
+
+.LandingPage-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.LandingPage-section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.List-container {
+  border-top: 1px solid lightgray;
+  width: 80%;
+  height: 50vh;
+  margin: auto;
+  background-color: white;
+  justify-content: flex-start;
+}
+
+.List-section {
+  margin: 50px;
+}
+
+@media (max-width: 680px) {
   .LandingPage-section {
      padding-top: 10%;
      padding-bottom: 10%;
      height: auto;
+     width: 100%;
+  }
+
+  .LandingPage-section-half {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .LandingPage-section-left, .LandingPage-section-right {
+    align-items: center
+  }
+
+  .mobile-flex {
+    flex-direction: column;
+  }
+
+  .List-section {
+    margin: 10px;
   }
 }
 
@@ -39,7 +94,6 @@
 }
 
 .LandingPage-header {
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,8 +114,8 @@
 }
 
 .LandingPage-social .fa {
+  color: #2c3e50;
   font-size: 30pt;
-  color: white;
   padding: 10px;
   text-align: center;
 }
@@ -69,4 +123,12 @@
 .btn-outline-primary {
   border: 1px solid white;
   color: white;
+}
+
+.list-style-none {
+  padding-left: 40px;
+}
+
+.list-style-none > li {
+  margin-top: 5px;
 }

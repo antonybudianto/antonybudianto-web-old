@@ -35,7 +35,7 @@ class PortfolioPage extends Component {
         <div className="with-header">
           <div className="section">
             <div className="heading">
-                <h2 id="portfolio"><a style={{color: 'white'}} href="#portfolio"><i className="fa fa-bookmark"></i> Portfolio</a></h2>
+                <h2 id="portfolio"><a href="#portfolio"><i className="fa fa-bookmark"></i> Portfolio</a></h2>
             </div>
             <div className="row portfolio-container">
                 {
