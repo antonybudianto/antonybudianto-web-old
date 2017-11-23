@@ -13,7 +13,7 @@ const app = createReactAppExpress({
   clientBuildPath,
   universalRender: handleUniversalRender,
   onEndReplace(html) {
-    return html.replace('{{SCRIPT}}', `${tag}`)
+    return html.replace('<div id="script"></div>', `${tag}`)
   }
 });
 
