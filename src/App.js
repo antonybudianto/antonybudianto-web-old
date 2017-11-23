@@ -6,15 +6,15 @@ import {
 import * as firebase from 'firebase/app';
 
 import LandingPage from './LandingPage/LandingPage';
-import LoadableComponent from './common/LoadableComponent';
+import loadable from 'loadable-components'
 
 import './App.css';
 
-const PortfolioPage = LoadableComponent({
-  loader: () => import('./PortfolioPage/PortfolioPage')
+const PortfolioPage = loadable(() => import('./PortfolioPage/PortfolioPage'), {
+  LoadingComponent: props => <div>Loading...</div>
 });
-const NotFoundPage = LoadableComponent({
-  loader: () => import('./ErrorPage/NotFoundPage/NotFoundPage')
+const NotFoundPage = loadable(() => import('./ErrorPage/NotFoundPage/NotFoundPage'), {
+  LoadingComponent: props => <div>Loading...</div>
 });
 
 class App extends Component {

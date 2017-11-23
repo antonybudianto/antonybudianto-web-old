@@ -7,11 +7,11 @@ function isProd(valProd, valDev) {
 }
 
 module.exports = {
-  // For Firebase function/package bundle
-  entry: './src/app.js',
+  // Firebase function bundle, for production
+  // entry: './src/app.js',
 
-  // For standalone express bundle
-  // entry: './src/index.js',
+  // Standalone express bundle, for development
+  entry: isProd('./src/app.js', './src/index.js'),
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -37,10 +37,7 @@ module.exports = {
         options: {
           presets: ['env', 'react-app'],
           plugins: [
-            [require.resolve('babel-plugin-import-inspector'), {
-              serverSideRequirePath: true,
-              webpackRequireWeakId: true
-            }]
+            require.resolve("babel-plugin-dynamic-import-node")
           ]
         }
       },

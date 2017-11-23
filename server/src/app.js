@@ -1,31 +1,33 @@
-const path = require('path');
+import { getLoadableState } from 'loadable-components/server';
 
+const path = require('path');
 const React = require('react');
-const { renderToNodeStream } = require('react-dom/server');
-const { StaticRouter } = require('react-router-dom');
+const ReactDOMServer = require('react-dom/server');
+const { StaticRouter } = require('react-router');
 const { createReactAppExpress } = require('create-react-app-express');
 
 const {default: App} = require('../../src/App');
 const clientBuildPath = path.resolve(__dirname, 'client');
+let tag = ''
 const app = createReactAppExpress({
   clientBuildPath,
-  universalRender: handleUniversalRender
+  universalRender: handleUniversalRender,
+  onEndReplace(html) {
+    return html.replace('{{SCRIPT}}', `${tag}`)
+  }
 });
 
 function handleUniversalRender(req, res) {
   const context = {};
-  const stream = renderToNodeStream(
+  const app = (
     <StaticRouter location={req.url} context={context}>
       <App />
     </StaticRouter>
-  );
-
-  if (context.url) {
-    res.redirect(301, context.url);
-    return;
-  }
-
-  return stream;
+  )
+  return getLoadableState(app).then(loadableState => {
+    tag = loadableState.getScriptTag();
+    return ReactDOMServer.renderToNodeStream(app);
+  });
 }
 
 module.exports = app;
