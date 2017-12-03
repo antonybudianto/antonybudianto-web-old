@@ -38,9 +38,7 @@ const ListSection = () => (
             <ul className="list-style-none">
               {
                 githubRepos.map((gh, i) => (
-                  <li key={i}><a href={`https://github.com/${gh}`}>{gh}</a> &nbsp;
-                    <img src={`https://img.shields.io/github/stars/${gh}.svg`} alt={gh}/>
-                  </li>
+                  <li key={i}><a href={`https://github.com/${gh}`}>{gh}</a></li>
                 ))
               }
             </ul>

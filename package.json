@@ -19,7 +19,7 @@
   },
   "scripts": {
     "copy:server": "cp -a ./dist ./functions/server",
-    "copy": "npm run copy:server",
+    "copy": "npm run copy:server && rm build/index.html",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:prep": "npm run build && npm run prep",
