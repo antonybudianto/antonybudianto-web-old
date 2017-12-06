@@ -34,7 +34,7 @@ const ListSection = () => (
         justifyContent: 'space-evenly'
     }}>
         <div className="List-section">
-            <h4><i className="fa fa-github"></i> Latest repos</h4>
+            <h2><i className="fa fa-github"></i> Latest repos</h2>
             <ul className="list-style-none">
               {
                 githubRepos.map((gh, i) => (
@@ -44,7 +44,7 @@ const ListSection = () => (
             </ul>
         </div>
         <div className="List-section">
-          <h4><i className="fa fa-medium"></i> Latest blogs</h4>
+          <h2><i className="fa fa-medium"></i> Latest blogs</h2>
           <ul className="list-style-none">
             {
               mediumBlogs.map((md, i) => (
