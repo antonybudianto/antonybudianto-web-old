@@ -8,6 +8,15 @@
   margin-top: 50px;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.line {
+  border-top: 1px solid lightgray;
+  width: 80%;
+}
+
 .btn-menu.btn-link, .white-link {
   color: white;
 }
@@ -20,8 +29,31 @@
   display: none;
 }
 
+h1 {
+  font-size: 2.5rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+}
+
 @media (max-width: 600px) {
   .with-header {
     margin-top: 0;
+  }
+
+  hr.line {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 750px) {
+  .mobile-flex {
+    flex-direction: column;
   }
 }

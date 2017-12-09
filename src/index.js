@@ -6,7 +6,7 @@ import { loadComponents } from 'loadable-components'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import 'bootswatch/flatly/bootstrap.css';
+import 'bootswatch/dist/flatly/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 import './index.css';
 

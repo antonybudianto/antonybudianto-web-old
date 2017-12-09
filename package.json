@@ -9,7 +9,7 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "bootswatch": "^3.3.7",
+    "bootswatch": "^4.0.0-beta.2",
     "firebase": "^4.6.2",
     "font-awesome": "^4.7.0",
     "loadable-components": "^0.3.0",

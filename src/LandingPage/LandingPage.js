@@ -27,7 +27,7 @@ const mediumBlogs = [
 ]
 
 const ListSection = () => (
-  <div className="LandingPage-section List-container">
+  <div className="LandingPage-section List-container h-auto">
     <div className="mobile-flex" style={{
         display: 'flex',
         width: '100%',
@@ -35,7 +35,7 @@ const ListSection = () => (
     }}>
         <div className="List-section">
             <h2><i className="fa fa-github"></i> Latest repos</h2>
-            <ul className="list-style-none">
+            <ul>
               {
                 githubRepos.map((gh, i) => (
                   <li key={i}><a href={`https://github.com/${gh}`}>{gh}</a></li>
@@ -45,7 +45,7 @@ const ListSection = () => (
         </div>
         <div className="List-section">
           <h2><i className="fa fa-medium"></i> Latest blogs</h2>
-          <ul className="list-style-none">
+          <ul>
             {
               mediumBlogs.map((md, i) => (
                 <li key={i}>
@@ -63,6 +63,13 @@ const LandingPage = () =>
   <div>
     <AppHeader></AppHeader>
     <HomeSection></HomeSection>
+    <div className="LandingPage-section h-auto font-italic text-center">
+      <p>
+      “The happiest moment i've ever felt was that moment when i discovered my ability to create.”
+― Dr. Hazem Ali
+      </p>
+    </div>
+    <hr className="line"/>
     <ListSection />
   </div>
 
