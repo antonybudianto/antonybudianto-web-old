@@ -2,6 +2,28 @@
 # yarn lockfile v1
 
 
+"@cra-express/core@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@cra-express/core/-/core-2.0.0.tgz#9a68e95216a1f89b689ee621c8f8c1d0e255c7a4"
+  dependencies:
+    "@cra-express/static-loader" "^2.0.0"
+    "@cra-express/universal-loader" "^2.0.0"
+    express "4.16.2"
+    react "^16.2.0"
+    react-dom "^16.2.0"
+
+"@cra-express/static-loader@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@cra-express/static-loader/-/static-loader-2.0.0.tgz#2bf568ebfe3da1e2338215f94ebc4db2c1c841b1"
+  dependencies:
+    body-parser "^1.18.2"
+    compression "^1.7.1"
+    morgan "^1.9.0"
+
+"@cra-express/universal-loader@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@cra-express/universal-loader/-/universal-loader-2.0.0.tgz#6d22ac46f98a4d682d43b7a7846e3446bb7940e3"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1017,17 +1039,6 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-app-express@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/create-react-app-express/-/create-react-app-express-1.1.0.tgz#4242079e626cdc1b3a0499495d615dc897fb9dc3"
-  dependencies:
-    body-parser "^1.18.2"
-    compression "^1.7.1"
-    express "^4.16.2"
-    morgan "^1.9.0"
-    react "^16.0.0"
-    react-dom "^16.0.0"
-
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -1363,7 +1374,7 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-express@^4.16.2:
+express@4.16.2:
   version "4.16.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.2.tgz#e35c6dfe2d64b7dca0a5cd4f21781be3299e076c"
   dependencies:
@@ -2684,18 +2695,18 @@ rc@^1.0.1, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.0.0:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.1.1.tgz#b2e331b6d752faf1a2d31399969399a41d8d45f8"
+react-dom@^16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@^16.0.0:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.1.1.tgz#d5c4ef795507e3012282dd51261ff9c0e824fe1f"
+react@^16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
