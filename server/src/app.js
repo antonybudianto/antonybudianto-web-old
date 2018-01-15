@@ -9,6 +9,7 @@ const stringRenderer = require('@cra-express/universal-loader/lib/renderer/strin
 
 const {default: App} = require('../../src/App');
 const clientBuildPath = path.resolve(__dirname, 'client');
+const context = {};
 let tag = ''
 const app = createReactAppExpress({
   clientBuildPath,
@@ -16,11 +17,19 @@ const app = createReactAppExpress({
   universalRender: handleUniversalRender,
   onEndReplace(html) {
     return html.replace('<div id="script"></div>', `${tag}`)
+  },
+  onFinish(req, res, html) {
+    if (context.status === 404) {
+      return res.status(404).send(html);
+    }
+    if (context.url) {
+      return res.redirect(301, context.url);
+    }
+    return res.send(html);
   }
 });
 
 function handleUniversalRender(req, res) {
-  const context = {};
   const app = (
     <StaticRouter location={req.url} context={context}>
       <App />
@@ -29,14 +38,6 @@ function handleUniversalRender(req, res) {
   return getLoadableState(app).then(loadableState => {
     tag = loadableState.getScriptTag();
     const str = ReactDOMServer.renderToString(app);
-
-    if (context.status === 404) {
-      return res.status(404).send(str);
-    }
-    if (context.url) {
-      return res.redirect(301, context.url);
-    }
-
     return str;
   });
 }

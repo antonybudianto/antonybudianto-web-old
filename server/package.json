@@ -25,7 +25,7 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "@cra-express/core": "^2.0.0",
+    "@cra-express/core": "^2.1.0",
     "dotenv": "^4.0.0",
     "loadable-components": "^0.3.0"
   }
