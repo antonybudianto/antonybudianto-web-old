@@ -9,7 +9,7 @@ const stringRenderer = require('@cra-express/universal-loader/lib/renderer/strin
 
 const {default: App} = require('../../src/App');
 const clientBuildPath = path.resolve(__dirname, 'client');
-const context = {};
+let context = {};
 let tag = ''
 const app = createReactAppExpress({
   clientBuildPath,
@@ -30,6 +30,7 @@ const app = createReactAppExpress({
 });
 
 function handleUniversalRender(req, res) {
+  context = {}
   const app = (
     <StaticRouter location={req.url} context={context}>
       <App />
