@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { loadComponents } from 'loadable-components'
 
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
 import 'bootswatch/dist/flatly/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
@@ -17,4 +17,5 @@ loadComponents().then(() => {
     </BrowserRouter>
   , document.getElementById('root'));
 });
-registerServiceWorker();
+
+unregister();

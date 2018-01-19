@@ -3,8 +3,8 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "enzyme": "^3.2.0",
-    "react-scripts": "1.0.17",
+    "enzyme": "^3.3.0",
+    "react-scripts": "1.1.0",
     "react-test-renderer": "^16.1.1",
     "rimraf": "^2.6.2"
   },
@@ -12,9 +12,9 @@
     "bootswatch": "^4.0.0-beta.2",
     "firebase": "^4.6.2",
     "font-awesome": "^4.7.0",
-    "loadable-components": "^0.3.0",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
+    "loadable-components": "0.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-router-dom": "4.2.2"
   },
   "scripts": {
