@@ -1,31 +1,46 @@
-const path = require('path');
+import { getLoadableState } from 'loadable-components/server';
 
+const path = require('path');
 const React = require('react');
-const { renderToNodeStream } = require('react-dom/server');
-const { StaticRouter } = require('react-router-dom');
-const { createReactAppExpress } = require('create-react-app-express');
+const ReactDOMServer = require('react-dom/server');
+const { StaticRouter } = require('react-router');
+const { createReactAppExpress } = require('@cra-express/core');
+const stringRenderer = require('@cra-express/universal-loader/lib/renderer/string-renderer').default;
 
 const {default: App} = require('../../src/App');
 const clientBuildPath = path.resolve(__dirname, 'client');
+let context = {};
+let tag = ''
 const app = createReactAppExpress({
   clientBuildPath,
-  universalRender: handleUniversalRender
+  handleRender: stringRenderer,
+  universalRender: handleUniversalRender,
+  onEndReplace(html) {
+    return html.replace('<div id="script"></div>', `${tag}`)
+  },
+  onFinish(req, res, html) {
+    if (context.status === 404) {
+      return res.status(404).send(html);
+    }
+    if (context.url) {
+      return res.redirect(301, context.url);
+    }
+    return res.send(html);
+  }
 });
 
 function handleUniversalRender(req, res) {
-  const context = {};
-  const stream = renderToNodeStream(
+  context = {}
+  const app = (
     <StaticRouter location={req.url} context={context}>
       <App />
     </StaticRouter>
-  );
-
-  if (context.url) {
-    res.redirect(301, context.url);
-    return;
-  }
-
-  return stream;
+  )
+  return getLoadableState(app).then(loadableState => {
+    tag = loadableState.getScriptTag();
+    const str = ReactDOMServer.renderToString(app);
+    return str;
+  });
 }
 
 module.exports = app;

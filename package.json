@@ -3,24 +3,23 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "enzyme": "^3.0.0",
-    "prep": "1.6.0",
-    "react-scripts": "1.0.14",
-    "react-test-renderer": "^15.6.1",
+    "enzyme": "^3.3.0",
+    "react-scripts": "1.1.0",
+    "react-test-renderer": "^16.1.1",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "bootswatch": "^3.3.7",
-    "firebase": "^4.4.0",
+    "bootswatch": "^4.0.0-beta.2",
+    "firebase": "^4.6.2",
     "font-awesome": "^4.7.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-loadable": "^4.0.5",
+    "loadable-components": "0.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-router-dom": "4.2.2"
   },
   "scripts": {
     "copy:server": "cp -a ./dist ./functions/server",
-    "copy": "npm run copy:server",
+    "copy": "npm run copy:server && rm build/index.html",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:prep": "npm run build && npm run prep",
@@ -28,6 +27,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy",
-    "clean": "rimraf build dist server/build functions/server functions/build"
+    "clean": "cra-universal clean && rimraf functions/server"
   }
 }

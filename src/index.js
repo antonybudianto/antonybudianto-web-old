@@ -1,19 +1,21 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { loadComponents } from 'loadable-components'
 
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
-import 'bootswatch/flatly/bootstrap.css';
+import 'bootswatch/dist/flatly/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 import './index.css';
 
-hydrate(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+loadComponents().then(() => {
+  hydrate(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  , document.getElementById('root'));
+});
 
-registerServiceWorker();
+unregister();

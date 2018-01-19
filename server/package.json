@@ -15,15 +15,18 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-import-inspector": "^2.0.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.6.1",
     "import-inspector": "^2.0.0",
-    "nodemon-webpack-plugin": "^0.1.2",
+    "nodemon-webpack-plugin": "0.1.2",
     "null-loader": "^0.1.1",
-    "webpack": "^3.5.5",
+    "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "create-react-app-express": "1.0.0"
+    "@cra-express/core": "^2.1.0",
+    "dotenv": "^4.0.0",
+    "loadable-components": "^0.4.0"
   }
 }
