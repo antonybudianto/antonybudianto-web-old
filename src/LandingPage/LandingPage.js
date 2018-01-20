@@ -60,8 +60,8 @@ const ListSection = () => (
         justifyContent: 'space-evenly'
     }}>
         <div className="List-section">
-            <h2><i className="fa fa-github"></i> Latest repos</h2>
-            <div className="row">
+            <h2><a href="#latest-repos"><i className="fa fa-github"></i> Latest repos</a></h2>
+            <div id="latest-repos" className="row">
               {
                 githubRepos.map((gh, i) => (
                   <div key={i} className="col-md-4 p-1">
@@ -80,8 +80,8 @@ const ListSection = () => (
             </div>
         </div>
         <div className="List-section">
-          <h2><i className="fa fa-medium"></i> Latest blogs</h2>
-          <ul>
+          <h2><a href="#latest-blogs"><i className="fa fa-medium"></i> Latest blogs</a></h2>
+          <ul id="latest-blogs">
             {
               mediumBlogs.map((md, i) => (
                 <li key={i}>
