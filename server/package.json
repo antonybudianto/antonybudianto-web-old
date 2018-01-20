@@ -19,7 +19,7 @@
     "babel-plugin-import-inspector": "^2.0.0",
     "babel-preset-env": "^1.6.1",
     "import-inspector": "^2.0.0",
-    "nodemon-webpack-plugin": "0.1.2",
+    "nodemon-webpack-plugin": "0.1.6",
     "null-loader": "^0.1.1",
     "webpack": "^3.10.0",
     "webpack-node-externals": "^1.6.0"
