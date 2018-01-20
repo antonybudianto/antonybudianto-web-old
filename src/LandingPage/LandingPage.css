@@ -84,10 +84,13 @@
 }
 
 .List-section {
-  margin: 50px;
+  margin: 20px;
+}
+.List-section a {
+  color: #3498DB;
 }
 .List-section ul {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 .List-section ul > li {
   margin-top: 8px;

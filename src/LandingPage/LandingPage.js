@@ -5,10 +5,31 @@ import AppHeader from '../common/AppHeader';
 import './LandingPage.css';
 
 const githubRepos = [
-  'antonybudianto/cra-universal',
-  'antonybudianto/angular-starter',
-  'antonybudianto/express-firebase',
-  'antonybudianto/express-firebase-middleware'
+  {
+    name: 'cra-universal',
+    desc: `CLI to initialize create-react-app project without ejecting.
+           Featuring Server side rendering with Code splitting.`
+  },
+  {
+    name: 'coin-book-mobile',
+    desc: 'Cryptocurrency simple viewer for VIP Bitcoin market.'
+  },
+  {
+    name: 'gitfun-react-native',
+    desc: 'Simple GitHub client on your mobile. Available on Expo and Google Play.'
+  },
+  {
+    name: 'angular-starter',
+    desc: 'Angular 2+ Starter using Gulp and TypeScript.'
+  },
+  {
+    name: 'express-firebase',
+    desc: 'Express starter for your Firebase applications.'
+  },
+  {
+    name: 'express-firebase-middleware',
+    desc: 'Express middleware for your Firebase applications.'
+  }
 ]
 
 const mediumBlogs = [
@@ -26,22 +47,37 @@ const mediumBlogs = [
   }
 ]
 
+//<li key={i}><a href={`https://github.com/${gh}`}>{gh}</a></li>
+
 const ListSection = () => (
   <div className="LandingPage-section List-container h-auto">
     <div className="mobile-flex" style={{
         display: 'flex',
-        width: '100%',
+        flexDirection: 'column',
+        width: '80%',
+        marginLeft: '10%',
+        marginRight: '10%',
         justifyContent: 'space-evenly'
     }}>
         <div className="List-section">
             <h2><i className="fa fa-github"></i> Latest repos</h2>
-            <ul>
+            <div className="row">
               {
                 githubRepos.map((gh, i) => (
-                  <li key={i}><a href={`https://github.com/${gh}`}>{gh}</a></li>
+                  <div key={i} className="col-md-4 p-1">
+                    <div className="card col-md-12">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <a href={'https://github.com/antonybudianto/' + gh.name}>
+                          <i className="fa fa-github"></i> {gh.name}</a>
+                        </h5>
+                        <p className="card-text">{gh.desc}</p>
+                      </div>
+                    </div>
+                  </div>
                 ))
               }
-            </ul>
+            </div>
         </div>
         <div className="List-section">
           <h2><i className="fa fa-medium"></i> Latest blogs</h2>
