@@ -12,7 +12,13 @@ const Portfolio = ({portfolio}) =>
         <i className="fa fa-spin fa-spinner fa-lg"></i>
       </ImageLoader>
       <div className="portfolio-label">
-        <a href={portfolio.url}>{portfolio.name}</a>
+        {
+          portfolio.url ? (
+            <a href={portfolio.url}>{portfolio.name}</a>
+          ) : (
+            portfolio.name
+          )
+        }
       </div>
     </div>
   </div>

@@ -46,6 +46,7 @@
   overflow: hidden;
   text-align: center;
   background-color: black;
+  color: white;
   border: 2px solid white;
   transition: all 2s;
   transform: translate(-50%, -50%) scale(2);
