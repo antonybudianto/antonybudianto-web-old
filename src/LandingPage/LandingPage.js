@@ -92,7 +92,8 @@ const LandingPage = () =>
     <HomeSection></HomeSection>
     <div className="LandingPage-section h-auto text-center">
       <p>
-        I love to follow latest web technology, writing blog posts, and contribute to open source
+        I love to follow latest web technology, writing blog posts, and contribute to open source. <br />
+        My latest favorite tech stacks are JavaScript, React, React Native, Firebase and Golang.
       </p>
     </div>
     <hr className="line"/>
