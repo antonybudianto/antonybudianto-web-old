@@ -90,10 +90,9 @@ const LandingPage = () =>
   <div>
     <AppHeader></AppHeader>
     <HomeSection></HomeSection>
-    <div className="LandingPage-section h-auto font-italic text-center">
+    <div className="LandingPage-section h-auto text-center">
       <p>
-      “The happiest moment i've ever felt was that moment when i discovered my ability to create.”
-― Dr. Hazem Ali
+        I love to follow latest web technology, writing blog posts, and contribute to open source
       </p>
     </div>
     <hr className="line"/>
