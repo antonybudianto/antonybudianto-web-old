@@ -9,7 +9,7 @@ const HomeSection = () =>
                 <div style={{
                     margin: '20px'
                 }} className="LandingPage-img">
-                    <img src="profile.jpg" alt=""/>
+                    <img src="profile.jpg" title="Antony Budianto" alt="Antony Budianto"/>
                 </div>
             </div>
             <div className="LandingPage-section-right">

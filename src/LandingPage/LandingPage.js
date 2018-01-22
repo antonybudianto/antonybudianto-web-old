@@ -47,18 +47,9 @@ const mediumBlogs = [
   }
 ]
 
-//<li key={i}><a href={`https://github.com/${gh}`}>{gh}</a></li>
-
 const ListSection = () => (
   <div className="LandingPage-section List-container h-auto">
-    <div className="mobile-flex" style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '80%',
-        marginLeft: '10%',
-        marginRight: '10%',
-        justifyContent: 'space-evenly'
-    }}>
+    <div className="mobile-flex">
         <div className="List-section">
             <h2><a href="#latest-repos"><i className="fa fa-github"></i> Latest repos</a></h2>
             <div id="latest-repos" className="row">
@@ -79,7 +70,7 @@ const ListSection = () => (
               }
             </div>
         </div>
-        <div className="List-section">
+        <div className="List-section my-5">
           <h2><a href="#latest-blogs"><i className="fa fa-medium"></i> Latest blogs</a></h2>
           <ul id="latest-blogs">
             {
