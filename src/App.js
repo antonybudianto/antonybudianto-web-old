@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
   Route,
-  Switch
+  Switch,
+  Redirect
 } from 'react-router-dom';
 import * as firebase from 'firebase/app';
 
@@ -13,9 +14,9 @@ import './App.css';
 const PortfolioPage = loadable(() => import('./PortfolioPage/PortfolioPage'), {
   LoadingComponent: props => <div>Loading...</div>
 });
-const NotFoundPage = loadable(() => import('./ErrorPage/NotFoundPage/NotFoundPage'), {
-  LoadingComponent: props => <div>Loading...</div>
-});
+// const NotFoundPage = loadable(() => import('./ErrorPage/NotFoundPage/NotFoundPage'), {
+//   LoadingComponent: props => <div>Loading...</div>
+// });
 
 class App extends Component {
   componentWillMount() {
@@ -38,7 +39,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/portfolio" component={PortfolioPage} />
-          <Route component={NotFoundPage} />
+          <Redirect to="/" />
         </Switch>
       </div>
     );
