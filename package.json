@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "bootswatch": "4.0.0",
-    "firebase": "^4.9.0",
+    "firebase": "^4.9.1",
     "font-awesome": "^4.7.0",
-    "loadable-components": "0.4.0",
+    "loadable-components": "1.0.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",

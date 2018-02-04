@@ -12,6 +12,7 @@ import loadable from 'loadable-components'
 import './App.css';
 
 const PortfolioPage = loadable(() => import('./PortfolioPage/PortfolioPage'), {
+  modules: ['./PortfolioPage/PortfolioPage'],
   LoadingComponent: props => <div>Loading...</div>
 });
 // const NotFoundPage = loadable(() => import('./ErrorPage/NotFoundPage/NotFoundPage'), {
