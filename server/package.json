@@ -27,6 +27,6 @@
   "dependencies": {
     "@cra-express/core": "^2.1.0",
     "dotenv": "^5.0.0",
-    "loadable-components": "^1.0.2"
+    "loadable-components": "1.1.1"
   }
 }

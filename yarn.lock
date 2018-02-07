@@ -4157,9 +4157,9 @@ load-json-file@^2.0.0:
     pify "^2.0.0"
     strip-bom "^3.0.0"
 
-loadable-components@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/loadable-components/-/loadable-components-1.0.2.tgz#d645f6a14ad54bfd0c2940cfabc8cfa5577cb0d3"
+loadable-components@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/loadable-components/-/loadable-components-1.1.1.tgz#aed1f79ab15579aeab4de6563864e3ee8dcd07a2"
   dependencies:
     babel-plugin-syntax-dynamic-import "^6.18.0"
 
