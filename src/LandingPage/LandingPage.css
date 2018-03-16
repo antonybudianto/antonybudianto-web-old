@@ -20,18 +20,20 @@
   font-size: 36pt;
   cursor: pointer;
   animation: upDownAnim 2s infinite;
-  transition: transform 1s ease-in-out;
 }
 
 @keyframes upDownAnim {
   0% {
-    transform: translateY(0px)
+    opacity: 0.3;
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(10px)
+    opacity: 1;
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(0px)
+    opacity: 0.3;
+    transform: translateY(0px);
   }
 }
 
@@ -114,7 +116,7 @@
 }
 
 .List-section {
-  margin: 20px;
+  margin: 50px 0px;
 }
 .List-section a {
   color: #3498DB;
@@ -158,7 +160,7 @@
   }
 
   .List-section {
-    margin: 10px;
+    margin: 40px 0px;
   }
 
   .List-section ul {

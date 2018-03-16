@@ -48,8 +48,15 @@ const mediumBlogs = [
 ]
 
 const ListSection = () => (
-  <div className="LandingPage-section List-container">
+  <div className="LandingPage-section List-container h-auto">
     <div className="mobile-flex">
+      <div className="List-section">
+        <h2>Hello world!</h2>
+        <p>
+          I'm Antony. I love to follow latest web technology, writing blog posts, and contribute to open source. <br />
+          My latest favorite tech stacks are JavaScript, React, React Native, Firebase and Golang.
+        </p>
+      </div>
       <div className="List-section">
           <h2 id="latest-repos">My repos</h2>
           <div className="d-flex flex-wrap justify-content-between">
@@ -69,7 +76,7 @@ const ListSection = () => (
             }
           </div>
       </div>
-      <div className="List-section my-3">
+      <div className="List-section">
         <h2>My blogs</h2>
         <ul id="latest-blogs">
           {
@@ -89,14 +96,8 @@ const LandingPage = () =>
   <div>
     <AppHeader></AppHeader>
     <HomeSection></HomeSection>
-    {/* <div className="LandingPage-section h-auto text-center">
-      <p>
-        I love to follow latest web technology, writing blog posts, and contribute to open source. <br />
-        My latest favorite tech stacks are JavaScript, React, React Native, Firebase and Golang.
-      </p>
-    </div>
-    <hr className="line"/> */}
     <ListSection />
+    <footer className="LandingPage-background text-center py-4">&copy; {new Date().getFullYear()}. antonybudianto.com</footer>
   </div>
 
 export default LandingPage;
