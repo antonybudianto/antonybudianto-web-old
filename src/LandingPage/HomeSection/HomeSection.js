@@ -1,9 +1,10 @@
 import React from 'react';
 
-const HomeSection = () =>
-    <div className="LandingPage-section h-auto" style={{
+const scrollToView = (id) => document.querySelector(id)
+    .scrollIntoView({ behavior: 'smooth' })
 
-    }}>
+const HomeSection = () =>
+    <div className="LandingPage-section LandingPage-background">
         <div className="LandingPage-section-half">
             <div className="LandingPage-section-left">
                 <div style={{
@@ -14,7 +15,7 @@ const HomeSection = () =>
             </div>
             <div className="LandingPage-section-right">
                 <div className="LandingPage-header">
-                    <h1>Hi, I'm <span className="text-info">Antony Budianto</span></h1>
+                    <h1>Hi, I'm <span className="text-white text-name">Antony Budianto</span></h1>
                 </div>
                 <div className="LandingPage-intro">
                     <span> software engineer.</span>
@@ -36,6 +37,11 @@ const HomeSection = () =>
                     </a>
                     <a aria-label="LinkedIn" href="https://www.linkedin.com/in/antonybudianto">
                         <i aria-hidden="true" className="fa fa-icon fa-linkedin-square"></i>
+                    </a>
+                </div>
+                <div className="mt-3">
+                    <a onClick={() => scrollToView('#latest-repos')}>
+                        <i className="fa fa-arrow-down icon-down"></i>
                     </a>
                 </div>
             </div>
