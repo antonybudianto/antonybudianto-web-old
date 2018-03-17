@@ -20,7 +20,7 @@
     "react-router-dom": "4.2.2"
   },
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{app,__{tests,mocks}__}/**/*.js\"",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{src,__{tests,mocks}__}/**/*.js\"",
     "copy:server": "cp -a ./dist ./functions/server",
     "copy": "npm run copy:server && rm build/index.html",
     "start": "react-scripts start",
