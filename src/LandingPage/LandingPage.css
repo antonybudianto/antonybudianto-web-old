@@ -8,7 +8,7 @@
 }
 
 .LandingPage-background {
-  background-color: #3498DB;
+  background-color: #3498db;
   color: white;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .LandingPage-section .icon-down {
-  font-size: 36pt;
+  font-size: 3rem;
   cursor: pointer;
   animation: upDownAnim 2s infinite;
 }
@@ -43,7 +43,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 20px;
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 .LandingPage-section-left {
@@ -88,7 +88,7 @@
 }
 
 .LandingPage-intro {
-  font-size: large;
+  font-size: 1.5rem;
   text-align: right;
   padding: 2px;
 }
@@ -102,7 +102,7 @@
 
 .LandingPage-social .fa {
   color: #2c3e50;
-  font-size: 30pt;
+  font-size: 2.5rem;
   padding: 10px;
   text-align: center;
 }
@@ -119,7 +119,7 @@
   margin: 50px 0px;
 }
 .List-section a {
-  color: #3498DB;
+  color: #3498db;
 }
 .List-section ul {
   padding-left: 20px;
@@ -155,8 +155,9 @@
     flex-direction: column;
   }
 
-  .LandingPage-section-left, .LandingPage-section-right {
-    align-items: center
+  .LandingPage-section-left,
+  .LandingPage-section-right {
+    align-items: center;
   }
 
   .List-section {
