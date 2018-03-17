@@ -105,6 +105,11 @@
   font-size: 2.5rem;
   padding: 10px;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.LandingPage-social .fa:hover {
+  color: white;
 }
 
 .List-container {
