@@ -93,25 +93,6 @@
   padding: 2px;
 }
 
-.LandingPage-social {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.LandingPage-social .fa {
-  color: #2c3e50;
-  font-size: 2.5rem;
-  padding: 10px;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
-}
-
-.LandingPage-social .fa:hover {
-  color: white;
-}
-
 .List-container {
   margin: auto;
   display: flex;
@@ -141,6 +122,24 @@
     flex-direction: column;
     margin-top: 0px;
   }
+}
+
+.LandingPage-social {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LandingPage-social .fa {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.LandingPage-social .fa:hover {
+  color: white;
 }
 
 @media (max-width: 750px) {
