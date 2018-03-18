@@ -56,12 +56,12 @@ const ListSection = () => (
     <div className="mobile-flex">
       <div className="List-section">
         <h2>Hello world!</h2>
-        <p>
-          I'm Antony. I love to follow latest web technology, writing blog
-          posts, and contribute to open source. <br />
+        <div>
+          I'm <strong>Antony</strong>. I love to follow latest web technology,
+          writing blog posts, and contribute to open source. <br />
           My latest favorite tech stacks are JavaScript, React, React Native,
           Firebase and Golang.
-        </p>
+        </div>
       </div>
       <div className="List-section">
         <h3 id="latest-repos">Open source</h3>
