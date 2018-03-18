@@ -4,7 +4,7 @@ import ImageLoader from '../../common/ImageLoader/ImageLoader';
 import './Portfolio.css';
 
 const Portfolio = ({ portfolio }) => (
-  <div className="portfolio no-padding col-md-4">
+  <div className="portfolio p-0 col-md-4">
     <div className="portfolio-image-wrapper">
       <ImageLoader
         className="img-responsive img-thumbnail"

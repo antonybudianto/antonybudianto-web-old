@@ -39,9 +39,7 @@ class PortfolioPage extends Component {
         <div className="with-header">
           <div className="section">
             <div className="heading">
-              <h2 id="portfolio">
-                <i className="fa fa-bookmark" /> Portfolio
-              </h2>
+              <h2 id="portfolio">Portfolio</h2>
             </div>
             <div className="row portfolio-container">
               {this.state.loading ? (
