@@ -15,17 +15,15 @@ const app = createReactAppExpress({
   clientBuildPath,
   handleRender: stringRenderer,
   universalRender: handleUniversalRender,
-  onEndReplace(html) {
-    return html.replace('<div id="script"></div>', `${tag}`)
-  },
   onFinish(req, res, html) {
+    const finalHtml = html.replace('<div id="script"></div>', `${tag}`);
     if (context.status === 404) {
-      return res.status(404).send(html);
+      return res.status(404).send(finalHtml);
     }
     if (context.url) {
       return res.redirect(301, context.url);
     }
-    return res.send(html);
+    return res.send(finalHtml);
   }
 });
 

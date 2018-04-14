@@ -1,7 +1,7 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { loadComponents } from 'loadable-components'
+import { loadComponents } from 'loadable-components';
 
 import App from './App';
 import { unregister } from './registerServiceWorker';
@@ -14,8 +14,9 @@ loadComponents().then(() => {
   hydrate(
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  , document.getElementById('root'));
+    </BrowserRouter>,
+    document.getElementById('root')
+  );
 });
 
 unregister();

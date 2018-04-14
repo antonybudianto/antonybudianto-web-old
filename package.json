@@ -5,19 +5,22 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "react-scripts": "1.1.0",
-    "react-test-renderer": "^16.1.1",
-    "rimraf": "^2.6.2"
+    "react-test-renderer": "^16.2.0",
+    "rimraf": "^2.6.2",
+    "prettier": "1.11.1"
   },
   "dependencies": {
-    "bootswatch": "^4.0.0-beta.2",
-    "firebase": "^4.6.2",
+    "bootswatch": "4.0.0",
+    "firebase": "^4.9.1",
     "font-awesome": "^4.7.0",
-    "loadable-components": "0.4.0",
+    "loadable-components": "1.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "4.2.2"
   },
   "scripts": {
+    "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
     "copy:server": "cp -a ./dist ./functions/server",
     "copy": "npm run copy:server && rm build/index.html",
     "start": "react-scripts start",

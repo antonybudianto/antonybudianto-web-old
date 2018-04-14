@@ -1120,9 +1120,9 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-dotenv@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
+dotenv@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.0.tgz#0206eb5b336639bf377618a2a304ff00c6a1fddb"
 
 duplexer@~0.1.1:
   version "0.1.1"
@@ -1971,9 +1971,11 @@ load-json-file@^2.0.0:
     pify "^2.0.0"
     strip-bom "^3.0.0"
 
-loadable-components@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/loadable-components/-/loadable-components-0.4.0.tgz#4470107bfaf02cc2278a3fc0d4040899f7afd10e"
+loadable-components@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/loadable-components/-/loadable-components-1.1.1.tgz#aed1f79ab15579aeab4de6563864e3ee8dcd07a2"
+  dependencies:
+    babel-plugin-syntax-dynamic-import "^6.18.0"
 
 loader-runner@^2.3.0:
   version "2.3.0"
