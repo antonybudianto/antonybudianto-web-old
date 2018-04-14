@@ -14,19 +14,19 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.4",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-import-inspector": "^2.0.0",
     "babel-preset-env": "^1.6.1",
     "import-inspector": "^2.0.0",
-    "nodemon-webpack-plugin": "0.1.6",
+    "nodemon-webpack-plugin": "3.0.1",
     "null-loader": "^0.1.1",
     "webpack": "^3.10.0",
-    "webpack-node-externals": "^1.6.0"
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "@cra-express/core": "^2.1.0",
-    "dotenv": "^5.0.0",
-    "loadable-components": "1.1.1"
+    "@cra-express/core": "^2.1.1",
+    "dotenv": "^5.0.1",
+    "loadable-components": "1.3.0"
   }
 }
