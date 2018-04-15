@@ -11,22 +11,21 @@ module.exports = {
   // entry: './src/app.js',
 
   // Standalone express bundle, for development
-  entry: isProd('./src/app.js', './src/index.js'),
+  entry: './src/index.js',
+  // entry: isProd('./src/app.js', './src/index.js'),
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   output: {
     path: __dirname + '/build',
     filename: 'bundle.js',
     chunkFilename: isProd('[id].[hash].chunk.js', '[id].chunk.js'),
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
   },
   target: 'node',
-  externals: [
-    nodeExternals()
-  ],
+  externals: [nodeExternals()],
   node: {
-    __dirname: false
+    __dirname: false,
   },
   module: {
     rules: [
@@ -39,20 +38,16 @@ module.exports = {
           plugins: [
             // "loadable-components/babel",
             // "babel-plugin-dynamic-import-node"
-            require.resolve("loadable-components/babel"),
-            require.resolve("babel-plugin-dynamic-import-node")
-          ]
-        }
+            require.resolve('loadable-components/babel'),
+            require.resolve('babel-plugin-dynamic-import-node'),
+          ],
+        },
       },
       {
         test: /\.(css|svg)?$/,
-        loaders: 'null-loader'
-      }
+        loaders: 'null-loader',
+      },
     ],
   },
-  plugins: isProd([
-      new webpack.optimize.UglifyJsPlugin()
-    ], [
-      new NodemonPlugin()
-    ])
-}
+  plugins: isProd([], [new NodemonPlugin()]),
+};
