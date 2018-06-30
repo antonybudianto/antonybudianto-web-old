@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "enzyme": "^3.3.0",
     "prettier": "1.12.0",
     "react-scripts": "1.1.4",
@@ -10,23 +11,27 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
+    "@cra-express/core": "^2.2.5",
     "bootswatch": "4.0.0",
-    "cra-universal": "^2.0.1",
+    "cra-universal": "^3.0.0",
+    "dotenv": "^6.0.0",
     "firebase": "^4.12.1",
     "font-awesome": "^4.7.0",
     "loadable-components": "1.3.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
     "react-router-dom": "4.2.2"
   },
   "scripts": {
     "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
-    "copy:server": "cp -a ./dist ./functions/server",
+    "copy:server": "cp -a ./dist ./functions/crau-dist",
     "copy": "npm run copy:server && rm build/index.html",
     "start": "react-scripts start",
+    "crau:start": "cra-universal start",
     "build": "react-scripts build",
-    "build:all": "cra-universal build",
+    "crau:build": "cra-universal build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy",
