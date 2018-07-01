@@ -3,11 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "enzyme": "^3.3.0",
     "prettier": "1.12.0",
     "react-scripts": "1.1.4",
@@ -29,6 +25,8 @@
     "react-router-dom": "4.2.2"
   },
   "scripts": {
+    "crau:b":
+      "microbundle crau.config.es.js -o=crau.config.js -f=cjs --sourcemap=false --compress=false",
     "crau:babel": "babel crau.config.es.js -o crau.config.js",
     "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
     "copy:server": "cp -a ./dist ./functions/crau-dist",
