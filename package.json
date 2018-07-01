@@ -39,6 +39,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy",
-    "clean": "cra-universal clean && rimraf functions/server"
+    "clean": "cra-universal clean && rimraf functions/crau-dist"
   }
 }
