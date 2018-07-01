@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "antonybudianto-web"
+    "default": "antonybudianto-web",
+    "staging": "staging-antonybudianto-web"
   }
 }

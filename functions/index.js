@@ -1,5 +1,5 @@
 const functions = require('firebase-functions');
 
-const app = require('./server/build/bundle');
+const app = require('./crau-dist/server/bundle');
 
 exports.app = functions.https.onRequest(app);
