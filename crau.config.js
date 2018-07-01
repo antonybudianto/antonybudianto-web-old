@@ -8,6 +8,6 @@ module.exports = {
       },
       entry: './server/app.js'
     };
-    return config;
+    return newConfig;
   }
 };
