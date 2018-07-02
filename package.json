@@ -13,7 +13,7 @@
   "dependencies": {
     "@cra-express/core": "^2.2.5",
     "bootswatch": "4.1.1",
-    "cra-universal": "^3.0.0",
+    "cra-universal": "^3.0.1",
     "dotenv": "^6.0.0",
     "firebase": "^5.2.0",
     "font-awesome": "^4.7.0",
@@ -25,8 +25,6 @@
     "react-router-dom": "4.3.1"
   },
   "scripts": {
-    "crau:b":
-      "microbundle crau.config.es.js -o=crau.config.js -f=cjs --sourcemap=false --compress=false",
     "crau:babel": "babel crau.config.es.js -o crau.config.js",
     "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
     "copy:server": "cp -a ./dist ./functions/crau-dist",

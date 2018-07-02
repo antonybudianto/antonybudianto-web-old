@@ -1,9 +1,13 @@
 module.exports = {
-  modifyWebpack: function(config) {
-    var newConfig = Object.assign({}, config, {
-      output: Object.assign({}, config.output, { libraryTarget: 'commonjs2' }),
+  modifyWebpack: config => {
+    const newConfig = {
+      ...config,
+      output: {
+        ...config.output,
+        libraryTarget: 'commonjs2'
+      },
       entry: './server/app.js'
-    });
+    };
     return newConfig;
   }
 };
