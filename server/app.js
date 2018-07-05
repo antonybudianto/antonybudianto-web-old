@@ -8,7 +8,7 @@ const { createReactAppExpress } = require('@cra-express/core');
 const stringRenderer = require('@cra-express/universal-loader/lib/renderer/string-renderer')
   .default;
 
-const { default: App } = require('../src/App');
+let { default: App } = require('../src/App');
 const clientBuildPath = path.resolve(__dirname, '../client');
 let context = {};
 let tag = '';
@@ -25,7 +25,7 @@ const app = createReactAppExpress({
       return res.redirect(301, context.url);
     }
     return res.send(finalHtml);
-  },
+  }
 });
 
 function handleUniversalRender(req, res) {
@@ -39,6 +39,13 @@ function handleUniversalRender(req, res) {
     tag = loadableState.getScriptTag();
     const str = ReactDOMServer.renderToString(app);
     return str;
+  });
+}
+
+if (module.hot) {
+  module.hot.accept('../src/App', () => {
+    App = require('../src/App').default;
+    console.log('App hot reloaded');
   });
 }
 
