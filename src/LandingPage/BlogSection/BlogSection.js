@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './BlogSection.css';
+
 const mediumBlogs = [
   {
     title: 'New cra-universal 3.0.0 released!',
@@ -47,11 +49,13 @@ class BlogSection extends Component {
         <div className="card-deck row no-gutters">
           {mediumBlogs.map((md, i) => (
             <div key={i} className="col-md-4 mb-3">
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={md.imgUrl || '/images/medium.jpg'}
-                  alt={md.title}
+              <div className="card BlogSection__card">
+                <div
+                  className="BlogSection__post-img"
+                  style={{
+                    backgroundImage: `url('${md.imgUrl ||
+                      '/images/medium.jpg'}')`
+                  }}
                 />
                 <div className="card-body">
                   <a className="card-title" href={md.url}>
