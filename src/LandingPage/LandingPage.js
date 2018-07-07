@@ -37,13 +37,24 @@ Featuring Server-side Rendering and Code-splitting`
 const mediumBlogs = [
   {
     title: 'New cra-universal 3.0.0 released!',
+    imgUrl:
+      'https://cdn-images-1.medium.com/max/1600/1*VK508QZOHvxzoA0uk1tzPw.png',
     url:
       'https://medium.com/@antonybudianto/new-cra-universal-3-0-0-released-37ceb19d31fb'
   },
   {
     title: 'Building React library using react-lib-scripts',
+    imgUrl:
+      'https://cdn-images-1.medium.com/max/1600/1*yDNSy8SRSyedGig3lD8KOA.jpeg',
     url:
       'https://medium.com/@antonybudianto/building-react-library-using-react-lib-scripts-eab6f0fd21f2'
+  },
+  {
+    title: 'Managing packages using LernaJS',
+    url:
+      'https://medium.com/@antonybudianto/managing-packages-with-lernajs-a15aaa786366',
+    imgUrl:
+      'https://cdn-images-1.medium.com/max/1600/1*GS0ohg3qm14E4Ya7fljicw.jpeg'
   },
   {
     title: 'Server-side rendering with React and Firebase Functions',
@@ -97,13 +108,28 @@ const ListSection = () => (
       </div>
       <div className="List-section">
         <h3 className="List-section__heading">Blogs</h3>
-        <ul id="latest-blogs">
+        <div className="card-deck row no-gutters">
           {mediumBlogs.map((md, i) => (
-            <li key={i}>
-              <a href={md.url}>{md.title}</a>
-            </li>
+            <div key={i} className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  className="card-img-top"
+                  src={md.imgUrl || '/images/medium.jpg'}
+                  alt={md.title}
+                />
+                <div className="card-body">
+                  <a className="card-title" href={md.url}>
+                    {md.title}
+                  </a>
+                  {/* <p className="card-text">{md.}</p> */}
+                  <p className="card-text">
+                    {/* <small className="text-muted">Read</small> */}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -114,7 +140,7 @@ const LandingPage = () => (
     <AppHeader />
     <HomeSection />
     <ListSection />
-    <footer className="LandingPage-background text-center py-4">
+    <footer className="text-center text-muted py-4">
       &copy; {new Date().getFullYear()}. antonybudianto.com
     </footer>
   </div>
