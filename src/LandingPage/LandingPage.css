@@ -104,6 +104,9 @@
 .List-section {
   margin: 50px 0px;
 }
+.List-section__heading {
+  margin-bottom: 20px;
+}
 .List-section a {
   color: #3498db;
 }

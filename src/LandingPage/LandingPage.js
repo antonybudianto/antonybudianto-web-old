@@ -74,7 +74,9 @@ const ListSection = () => (
         </div>
       </div>
       <div className="List-section">
-        <h3 id="latest-repos">Open source</h3>
+        <h3 id="latest-repos" className="List-section__heading">
+          Open source
+        </h3>
         <div className="d-flex flex-wrap justify-content-between">
           {githubRepos.map((gh, i) => (
             <div key={i} className="col-md-4 mb-2 px-0">
@@ -93,7 +95,7 @@ const ListSection = () => (
         </div>
       </div>
       <div className="List-section">
-        <h3>Blogs</h3>
+        <h3 className="List-section__heading">Blogs</h3>
         <ul id="latest-blogs">
           {mediumBlogs.map((md, i) => (
             <li key={i}>
