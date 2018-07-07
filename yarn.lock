@@ -2236,9 +2236,9 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
     parse-json "^2.2.0"
     require-from-string "^1.1.0"
 
-cra-universal@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/cra-universal/-/cra-universal-3.0.0.tgz#88218b173aa7ba6b30718569ed62864556896d43"
+cra-universal@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/cra-universal/-/cra-universal-3.0.2.tgz#448a3908c06ace8ae08d85a59fa83776f94e14ab"
   dependencies:
     "@cra-express/core" "^2.2.5"
     babel-core "^6.26.3"
@@ -2256,7 +2256,7 @@ cra-universal@^3.0.0:
     inquirer "^6.0.0"
     isomorphic-style-loader "^4.0.0"
     null-loader "^0.1.1"
-    start-server-webpack-plugin beta
+    start-server-webpack-plugin "3.0.0-rc3"
     url-loader "^1.0.1"
     webpack "^4.14.0"
     webpack-cli "^3.0.8"
@@ -7765,7 +7765,7 @@ ssri@^5.2.4:
   dependencies:
     safe-buffer "^5.1.1"
 
-start-server-webpack-plugin@beta:
+start-server-webpack-plugin@3.0.0-rc3:
   version "3.0.0-rc3"
   resolved "https://registry.yarnpkg.com/start-server-webpack-plugin/-/start-server-webpack-plugin-3.0.0-rc3.tgz#20fabee64114f3833a3a7241896967ae3de0d4d5"
 

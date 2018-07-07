@@ -19,4 +19,8 @@ loadComponents().then(() => {
   );
 });
 
+if (module.hot) {
+  module.hot.accept();
+}
+
 unregister();

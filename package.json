@@ -13,7 +13,7 @@
   "dependencies": {
     "@cra-express/core": "^2.2.5",
     "bootswatch": "4.1.1",
-    "cra-universal": "^3.0.1",
+    "cra-universal": "^3.0.2",
     "dotenv": "^6.0.0",
     "firebase": "^5.2.0",
     "font-awesome": "^4.7.0",

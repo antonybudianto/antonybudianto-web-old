@@ -9,7 +9,7 @@ const HomeSection = () => (
       <div className="LandingPage-section-left">
         <div
           style={{
-            margin: '20px',
+            margin: '20px'
           }}
           className="LandingPage-img"
         >
@@ -29,8 +29,8 @@ const HomeSection = () => (
         </div>
         <div className="LandingPage-intro">
           <span> software engineer.</span>
-          <span> tech blogger.</span>
           <span> open source artisan.</span>
+          <span> tech writer.</span>
         </div>
         <div className="LandingPage-social">
           <a title="Download CV" aria-label="Resume" href="cv.pdf" download>

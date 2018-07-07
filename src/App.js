@@ -7,15 +7,25 @@ import loadable from 'loadable-components';
 
 import './App.css';
 
+const LoadingView = () => (
+  <div
+    style={{
+      padding: '10px'
+    }}
+  >
+    Loading...
+  </div>
+);
+
 const PortfolioPage = loadable(() => import('./PortfolioPage/PortfolioPage'), {
   modules: ['./PortfolioPage/PortfolioPage'],
-  LoadingComponent: props => <div>Loading...</div>,
+  LoadingComponent: props => <LoadingView />
 });
 const NotFoundPage = loadable(
   () => import('./ErrorPage/NotFoundPage/NotFoundPage'),
   {
     modules: ['./ErrorPage/NotFoundPage/NotFoundPage'],
-    LoadingComponent: props => <div>Loading...</div>,
+    LoadingComponent: props => <LoadingView />
   }
 );
 
@@ -26,7 +36,7 @@ class App extends Component {
       authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
       databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
       storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-      messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_ID,
+      messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_ID
     };
 
     if (!firebase.apps.length) {

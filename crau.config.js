@@ -1,3 +1,4 @@
+const env = process.env.NODE_ENV || 'development';
 module.exports = {
   modifyWebpack: config => {
     const newConfig = {
@@ -6,7 +7,7 @@ module.exports = {
         ...config.output,
         libraryTarget: 'commonjs2'
       },
-      entry: './server/app.js'
+      entry: env ? './server/index.js' : './server/app.js'
     };
     return newConfig;
   }
