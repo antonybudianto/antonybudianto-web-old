@@ -12,7 +12,8 @@ Featuring Server-side Rendering and Code-splitting`
   },
   {
     name: 'coin-book-mobile',
-    desc: 'Cryptocurrency simple viewer for VIP Bitcoin market.'
+    desc:
+      'Cryptocurrency simple viewer for VIP Bitcoin market. Made using React Native.'
   },
   {
     name: 'gitfun-react-native',
