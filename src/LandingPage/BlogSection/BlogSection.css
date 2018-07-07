@@ -4,13 +4,13 @@
   background-size: cover;
   width: 100%;
   height: 200px;
-  transition: all 0.5s;
+  transition: all 0.4s;
   overflow: hidden;
   opacity: 1;
 }
 
 .BlogSection__post-img:hover {
-  transform: scale(0.7) rotate(2deg);
+  transform: scale(1.2) rotate(-2deg);
   opacity: 0.8;
 }
 

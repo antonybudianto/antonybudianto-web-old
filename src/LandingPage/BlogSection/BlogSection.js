@@ -51,12 +51,18 @@ class BlogSection extends Component {
             <div key={i} className="col-md-4 mb-3">
               <div className="card BlogSection__card">
                 <div
-                  className="BlogSection__post-img"
                   style={{
-                    backgroundImage: `url('${md.imgUrl ||
-                      '/images/medium.jpg'}')`
+                    overflow: 'hidden'
                   }}
-                />
+                >
+                  <div
+                    className="BlogSection__post-img"
+                    style={{
+                      backgroundImage: `url('${md.imgUrl ||
+                        '/images/medium.jpg'}')`
+                    }}
+                  />
+                </div>
                 <div className="card-body">
                   <a className="card-title" href={md.url}>
                     {md.title}
