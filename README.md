@@ -15,5 +15,9 @@ yarn
 
 cd ..
 firebase use <default/staging>
-yarn deploy --only=hosting,functions
+yarn deploy --only=hosting,functions:app
 ```
+
+
+### Google bot preview
+![test](https://user-images.githubusercontent.com/7658554/42420820-fb63d7fc-82f5-11e8-8415-4c988c43cb8c.png)
