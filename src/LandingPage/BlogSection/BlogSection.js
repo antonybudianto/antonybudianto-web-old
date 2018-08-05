@@ -27,7 +27,8 @@ const mediumBlogs = [
   {
     title: 'Server-side rendering with React and Firebase Functions',
     url:
-      'https://medium.com/@antonybudianto/server-side-rendering-with-react-and-firebase-functions-cd67fdb2b605'
+      'https://medium.com/@antonybudianto/server-side-rendering-with-react-and-firebase-functions-cd67fdb2b605',
+    imgUrl: 'https://cdn-images-1.medium.com/max/1600/1*LCU8zQ3Tw51MPlLtSCFyfw.jpeg'
   },
   {
     title: 'Testing React Router apps with Jest and Enzyme',
