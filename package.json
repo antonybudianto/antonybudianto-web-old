@@ -30,13 +30,15 @@
     "copy:server": "cp -a ./dist ./functions/crau-dist",
     "copy": "npm run copy:server && rm build/index.html",
     "start": "react-scripts start",
-    "crau:start": "cra-universal start",
     "build": "react-scripts build",
-    "crau:build": "cra-universal build",
-    "crau:clean": "cra-universal clean",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "clean": "cra-universal clean && rimraf functions/crau-dist",
     "deploy": "firebase deploy",
-    "clean": "cra-universal clean && rimraf functions/crau-dist"
+    "crau:start": "cra-universal start",
+    "precrau:build": "npm run clean",
+    "crau:build": "cra-universal build",
+    "postcrau:build": "npm run copy",
+    "crau:clean": "cra-universal clean"
   }
 }

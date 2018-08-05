@@ -8,7 +8,6 @@ Personal website repository. This project is bootstraped using [Create React App
 
 ```
 yarn crau:build
-yarn copy
 
 cd functions
 yarn
