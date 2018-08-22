@@ -33,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "clean": "cra-universal clean && rimraf functions/crau-dist",
+    "clean": "rimraf functions/crau-dist dist build server-build",
     "deploy": "firebase deploy",
     "crau:start": "cra-universal start",
     "precrau:build": "npm run clean",
