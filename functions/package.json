@@ -2,9 +2,9 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "dependencies": {
-    "@cra-express/core": "^2.2.5",
-    "@cra-express/static-loader": "^2.2.4",
-    "@cra-express/universal-loader": "^2.2.4",
+    "@cra-express/core": "^4.0.0",
+    "@cra-express/static-loader": "^4.0.0",
+    "@cra-express/universal-loader": "^4.0.0",
     "babel-runtime": "^6.26.0",
     "bootswatch": "4.1.1",
     "dotenv": "^6.0.0",
@@ -14,8 +14,8 @@
     "firebase-functions": "^1.1.0",
     "font-awesome": "^4.7.0",
     "loadable-components": "2.2.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "4.3.1"

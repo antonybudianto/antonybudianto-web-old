@@ -1,9 +1,7 @@
-import { getLoadableState } from 'loadable-components/server';
-
 const path = require('path');
 const React = require('react');
-const ReactDOMServer = require('react-dom/server');
 const { StaticRouter } = require('react-router');
+const { getLoadableState } = require('loadable-components/server');
 const { createReactAppExpress } = require('@cra-express/core');
 const stringRenderer = require('@cra-express/universal-loader/lib/renderer/string-renderer')
   .default;
@@ -30,15 +28,14 @@ const app = createReactAppExpress({
 
 function handleUniversalRender(req, res) {
   context = {};
-  const app = (
+  const appEl = (
     <StaticRouter location={req.url} context={context}>
       <App />
     </StaticRouter>
   );
-  return getLoadableState(app).then(loadableState => {
+  return getLoadableState(appEl).then(loadableState => {
     tag = loadableState.getScriptTag();
-    const str = ReactDOMServer.renderToString(app);
-    return str;
+    return appEl;
   });
 }
 
@@ -49,4 +46,4 @@ if (module.hot) {
   });
 }
 
-module.exports = app;
+export default app;

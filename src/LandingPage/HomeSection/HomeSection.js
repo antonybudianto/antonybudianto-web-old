@@ -53,7 +53,7 @@ const HomeSection = () => (
           </a>
         </div>
         <div className="mt-3">
-          <a onClick={() => scrollToView('#latest-repos')}>
+          <a href="#!" onClick={() => scrollToView('#latest-repos')}>
             <i className="fa fa-arrow-down icon-down" />
           </a>
         </div>
