@@ -1,6 +1,9 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
+  "engines": {
+    "node": "8"
+  },
   "dependencies": {
     "@cra-express/core": "^4.2.0",
     "@cra-express/static-loader": "^4.2.0",
