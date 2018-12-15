@@ -9,10 +9,10 @@
     "react-scripts": "2.0.5",
     "react-test-renderer": "^16.4.1",
     "rimraf": "^2.6.2",
-    "cra-universal": "^4.0.0"
+    "cra-universal": "^4.2.0"
   },
   "dependencies": {
-    "@cra-express/core": "^4.0.0",
+    "@cra-express/core": "^4.2.0",
     "bootswatch": "4.1.1",
     "dotenv": "^6.0.0",
     "firebase": "^5.2.0",
