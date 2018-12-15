@@ -2,27 +2,27 @@
 # yarn lockfile v1
 
 
-"@cra-express/core@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@cra-express/core/-/core-4.0.0.tgz#efdf01ae80bcb9caa60a9e998fd8bb0c1d3ddfd8"
-  integrity sha512-ev9VJ9FRr6xT4N7JAknjKa18kCc6gW4kjM44X8Eh9eupYgZ3QV8ZEXC0rQsLB9taC607j/X0XArxPTIBxN9ADg==
+"@cra-express/core@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cra-express/core/-/core-4.2.0.tgz#205d1d4d5a2bb9ac6294a4277b4eeebe2cf7631e"
+  integrity sha512-pHlaoV0oZiiBlEyq7HoZMktxPKu78yuLZl5IiON8e27SNUKeEpc1XMNv12P1bnq6bHRdK8kNpAkX2Ej+oZyfuw==
   dependencies:
-    "@cra-express/static-loader" "^4.0.0"
-    "@cra-express/universal-loader" "^4.0.0"
+    "@cra-express/static-loader" "^4.2.0"
+    "@cra-express/universal-loader" "^4.2.0"
     express "4.16.3"
 
-"@cra-express/static-loader@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@cra-express/static-loader/-/static-loader-4.0.0.tgz#b8fd75bc4f01f0cc242bd87f9d5734c59d141d32"
-  integrity sha512-WWTNrN85V6IGDJjcXAGwEVWeIdj5lJCEwd6TPc6yPs72cbsvpsRHW46j856BziMezWjyRyCigpUL+8mBkxu1pg==
+"@cra-express/static-loader@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cra-express/static-loader/-/static-loader-4.2.0.tgz#0a58321b9b2f9789a1ca3e5068ecd1679c3c4939"
+  integrity sha512-O7dtXear8mTjaaZCe5HHTKS+UZMMy6TB0G4SzAIwCObn3T2wQWTLdMsqyAHvJcwQaunREdbEhYEnODakEsSsxQ==
   dependencies:
     body-parser "^1.18.3"
     compression "^1.7.3"
 
-"@cra-express/universal-loader@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@cra-express/universal-loader/-/universal-loader-4.0.0.tgz#033e5d01b5c8737af7e9d4086979669ba1e34921"
-  integrity sha512-eGGNGQqWeFYXkVopp3hjR/5+sj8l5e+o07OfPqh1HwOIZUTMhJjCeqbeX5FKlYlv+48tfh7y+4M9R9B8neb9mg==
+"@cra-express/universal-loader@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cra-express/universal-loader/-/universal-loader-4.2.0.tgz#5e8270559e09575e3de6c33f15f13fc3c3bc71d3"
+  integrity sha512-WNFo9zLoekslP2yz22wTYt2XjixSXaPCCjyizSeHErbHuLG8UcXAP3l9Cgtyu5tl0PGrH5D6YAKV2iFoKdjkQA==
 
 "@firebase/app-types@0.1.2":
   version "0.1.2"
@@ -1422,10 +1422,10 @@ firebase-admin@~5.12.1:
     jsonwebtoken "8.1.0"
     node-forge "0.7.4"
 
-firebase-functions@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-1.1.0.tgz#f6419b860fdbec6302c351ff5b0020e68936e097"
-  integrity sha1-9kGbhg/b7GMCw1H/WwAg5ok24Jc=
+firebase-functions@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-2.1.0.tgz#10973f9055092aaa8ed5bd26410426a9790a99ea"
+  integrity sha512-gvWjfIu/q0jXSE/4JY+6XZyJWVzk0TeGLJAfKE4Y7W/cUxkycogc7EIBJSEMdHnxFAD3GE6VgCrhtTTmUud6Sw==
   dependencies:
     "@types/cors" "^2.8.1"
     "@types/express" "^4.11.1"
