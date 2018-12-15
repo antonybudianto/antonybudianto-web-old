@@ -19,4 +19,5 @@ yarn deploy --only=hosting,functions:app
 
 
 ### Google bot preview
-![test](https://user-images.githubusercontent.com/7658554/42420820-fb63d7fc-82f5-11e8-8415-4c988c43cb8c.png)
+
+![abc](https://user-images.githubusercontent.com/7658554/50041624-64e92a80-008a-11e9-82c2-c920d040c9a2.png)
