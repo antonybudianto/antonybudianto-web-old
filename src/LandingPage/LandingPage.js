@@ -14,7 +14,7 @@ const ListSection = () => (
         <div>
           I'm <strong>Antony</strong>. I love to follow latest web technology,
           writing blog posts, and contribute to open source. <br />
-          My latest favorite tech stacks are JavaScript, React, React Native,
+          My favorite tech stacks are JavaScript, React, React Native,
           Firebase and Golang.
         </div>
       </div>

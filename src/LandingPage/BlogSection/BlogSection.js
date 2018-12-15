@@ -4,6 +4,13 @@ import './BlogSection.css';
 
 const mediumBlogs = [
   {
+    title: 'React Testing with react-testing-library',
+    imgUrl:
+      'https://cdn-images-1.medium.com/max/1600/1*GeTKyss99H4Q5cWqFsNO8Q.jpeg',
+    url:
+      'https://medium.com/@antonybudianto/react-testing-with-react-testing-library-3b8554f6acfd'
+  },
+  {
     title: 'New cra-universal 3.0.0 released!',
     imgUrl:
       'https://cdn-images-1.medium.com/max/1600/1*VK508QZOHvxzoA0uk1tzPw.png',
@@ -11,11 +18,11 @@ const mediumBlogs = [
       'https://medium.com/@antonybudianto/new-cra-universal-3-0-0-released-37ceb19d31fb'
   },
   {
-    title: 'Building React library using react-lib-scripts',
+    title: 'Tips for server-side rendering with React',
     imgUrl:
-      'https://cdn-images-1.medium.com/max/1600/1*yDNSy8SRSyedGig3lD8KOA.jpeg',
+      'https://cdn-images-1.medium.com/max/1600/1*QvtSaHdquK5FBIFoJ0gc_A.jpeg',
     url:
-      'https://medium.com/@antonybudianto/building-react-library-using-react-lib-scripts-eab6f0fd21f2'
+      'https://itnext.io/tips-for-server-side-rendering-with-react-e42b1b7acd57'
   },
   {
     title: 'Managing packages using LernaJS',
@@ -28,17 +35,13 @@ const mediumBlogs = [
     title: 'Server-side rendering with React and Firebase Functions',
     url:
       'https://medium.com/@antonybudianto/server-side-rendering-with-react-and-firebase-functions-cd67fdb2b605',
-    imgUrl: 'https://cdn-images-1.medium.com/max/1600/1*LCU8zQ3Tw51MPlLtSCFyfw.jpeg'
+    imgUrl:
+      'https://cdn-images-1.medium.com/max/1600/1*LCU8zQ3Tw51MPlLtSCFyfw.jpeg'
   },
   {
     title: 'Testing React Router apps with Jest and Enzyme',
     url:
       'https://medium.com/@antonybudianto/react-router-testing-with-jest-and-enzyme-17294fefd303'
-  },
-  {
-    title: 'Automate your create-react-app build on Heroku using Buildpack',
-    url:
-      'https://medium.com/@antonybudianto/automate-your-create-react-app-build-on-heroku-using-buildpack-beb77408ffee'
   }
 ];
 
@@ -46,7 +49,7 @@ class BlogSection extends Component {
   render() {
     return (
       <div className="List-section">
-        <h3 className="List-section__heading">Blogs</h3>
+        <h2 className="List-section__heading">Blogs</h2>
         <div className="card-deck row no-gutters">
           {mediumBlogs.map((md, i) => (
             <div key={i} className="col-md-4 mb-3">

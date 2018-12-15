@@ -8,7 +8,7 @@
 }
 
 .LandingPage-background {
-  background-color: #3498db;
+  background-color: black;
   color: white;
 }
 
@@ -19,6 +19,7 @@
 .LandingPage-section .icon-down {
   font-size: 3rem;
   cursor: pointer;
+  color: #3498db;
   animation: upDownAnim 2s infinite;
 }
 

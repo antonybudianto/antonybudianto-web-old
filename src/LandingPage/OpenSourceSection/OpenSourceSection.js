@@ -7,18 +7,17 @@ const githubRepos = [
 Featuring Server-side Rendering and Code-splitting`
   },
   {
-    name: 'coin-book-mobile',
-    desc:
-      'Cryptocurrency simple viewer for VIP Bitcoin market. Made using React Native.'
+    name: 'react-ua',
+    desc: 'React User Agent component and provider, using new Context API'
+  },
+  {
+    name: 'react-save-localstorage',
+    desc: 'React component to save data to localStorage on render phase safely'
   },
   {
     name: 'gitfun-react-native',
     desc:
       'Simple GitHub client on your mobile. Available on Expo and Google Play.'
-  },
-  {
-    name: 'angular-starter',
-    desc: 'Angular 2+ Starter using Gulp and TypeScript.'
   },
   {
     name: 'react-lib-scripts',
@@ -34,9 +33,9 @@ class OpenSourceSection extends Component {
   render() {
     return (
       <div className="List-section">
-        <h3 id="latest-repos" className="List-section__heading">
+        <h2 id="latest-repos" className="List-section__heading">
           Open source
-        </h3>
+        </h2>
         <div className="d-flex flex-wrap justify-content-between">
           {githubRepos.map((gh, i) => (
             <div key={i} className="col-md-4 mb-2 px-0">
