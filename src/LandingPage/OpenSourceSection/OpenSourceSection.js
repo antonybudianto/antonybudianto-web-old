@@ -36,16 +36,20 @@ class OpenSourceSection extends Component {
         <h2 id="latest-repos" className="List-section__heading">
           Open source
         </h2>
+        <p>
+          Here are some of my open source projects, feel free to check it out
+          and contribute!
+        </p>
         <div className="d-flex flex-wrap justify-content-between">
           {githubRepos.map((gh, i) => (
             <div key={i} className="col-md-4 mb-2 px-0">
               <div key={i} className="card mx-1">
                 <div className="card-body">
-                  <h5 className="card-title">
+                  <div className="card-title">
                     <a href={'https://github.com/antonybudianto/' + gh.name}>
                       {gh.name}
                     </a>
-                  </h5>
+                  </div>
                   <p className="card-text">{gh.desc}</p>
                 </div>
               </div>
