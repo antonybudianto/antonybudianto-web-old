@@ -1,6 +1,7 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { loadComponents } from 'loadable-components';
 
 import App from './App';
@@ -12,9 +13,11 @@ import './index.css';
 
 loadComponents().then(() => {
   hydrate(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
+    <HelmetProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>,
     document.getElementById('root')
   );
 });
