@@ -61,7 +61,7 @@ const LandingPage = () => (
         property="og:description"
         content="Antony Budianto Official Website. Web technology enthusiast, tech blogger, and open source artisan. View his latest work here."
       />
-      <link rel="canonical" href="https:/antonybudianto.com/" />
+      <link rel="canonical" href="https://antonybudianto.com/" />
     </Helmet>
     <AppHeader />
     <HomeSection />

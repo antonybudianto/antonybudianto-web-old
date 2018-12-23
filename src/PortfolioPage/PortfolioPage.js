@@ -64,7 +64,7 @@ class PortfolioPage extends Component {
             property="og:description"
             content="Antony Budianto Official Website. Web technology enthusiast, tech blogger, and open source artisan. View his latest work here."
           />
-          <link rel="canonical" href="https:/antonybudianto.com/portfolio/" />
+          <link rel="canonical" href="https://antonybudianto.com/portfolio/" />
         </Helmet>
         <AppHeader />
         <div className="with-header">
