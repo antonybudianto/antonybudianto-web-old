@@ -36,9 +36,6 @@ const HomeSection = () => (
           <a title="Download CV" aria-label="Resume" href="cv.pdf" download>
             <i aria-hidden="true" className="fa fa-icon fa-address-card" />
           </a>
-          <a aria-label="Github" href="https://github.com/antonybudianto">
-            <i aria-hidden="true" className="fa fa-icon fa-github-square" />
-          </a>
           <a aria-label="Facebook" href="https://facebook.com/antonybudianto">
             <i aria-hidden="true" className="fa fa-icon fa-facebook-square" />
           </a>
@@ -50,6 +47,9 @@ const HomeSection = () => (
             href="https://www.linkedin.com/in/antonybudianto"
           >
             <i aria-hidden="true" className="fa fa-icon fa-linkedin-square" />
+          </a>
+          <a aria-label="Youtube" href="https://youtube.com/c/AntonyBudianto">
+            <i aria-hidden="true" className="fa fa-icon fa-youtube-square" />
           </a>
         </div>
         <div className="mt-3">
