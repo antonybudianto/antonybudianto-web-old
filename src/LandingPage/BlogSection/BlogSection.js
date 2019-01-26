@@ -50,7 +50,7 @@ class BlogSection extends Component {
     return (
       <div className="List-section">
         <h2 className="List-section__heading">Blogs</h2>
-        <p>I wrote some blogs from I've learned, please check it out!</p>
+        <p>I wrote some blogs from what I've learned, please check it out!</p>
         <div className="card-deck row no-gutters">
           {mediumBlogs.map((md, i) => (
             <div key={i} className="col-md-4 mb-3">
