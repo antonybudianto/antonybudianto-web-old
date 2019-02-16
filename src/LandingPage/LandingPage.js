@@ -6,6 +6,7 @@ import AppHeader from '../common/AppHeader';
 import './LandingPage.css';
 import BlogSection from './BlogSection/BlogSection';
 import OpenSourceSection from './OpenSourceSection/OpenSourceSection';
+import YoutubeSection from './YoutubeSection/YoutubeSection';
 
 const ListSection = () => (
   <div className="LandingPage-section List-container h-auto">
@@ -19,6 +20,7 @@ const ListSection = () => (
           and Golang.
         </div>
       </div>
+      <YoutubeSection />
       <BlogSection />
       <OpenSourceSection />
     </div>
