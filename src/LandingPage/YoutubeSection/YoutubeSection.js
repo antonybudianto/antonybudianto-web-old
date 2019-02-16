@@ -30,7 +30,9 @@ class YoutubeSection extends Component {
         <h2 className="List-section__heading">YouTube</h2>
         <div className="mb-3">
           I create tech news and tutorial, please like, share and{' '}
-          <strong>subscribe!</strong>
+          <a href="https://www.youtube.com/channel/UCHgFuZ220_FDdxFL7OSay4A">
+            SUBSCRIBE!
+          </a>
         </div>
         <div className="card-deck row no-gutters">
           {ytVideos.map((v, i) => (
