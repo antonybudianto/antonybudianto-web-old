@@ -15,6 +15,7 @@ dist
 .DS_Store
 .env
 npm-debug.log
+firebase-debug.log
 
 .vscode
 functions/crau-dist
