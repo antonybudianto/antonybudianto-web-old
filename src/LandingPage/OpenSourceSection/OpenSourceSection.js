@@ -29,6 +29,13 @@ Featuring Server-side Rendering and Code-splitting`
   }
 ];
 
+const sponsors = [
+  {
+    name: 'Stan Day',
+    type: 'Patreon'
+  }
+]
+
 class OpenSourceSection extends Component {
   render() {
     return (
@@ -55,6 +62,17 @@ class OpenSourceSection extends Component {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-3 ml-2">
+          <h4>My sponsors:</h4>
+          <div><a href="https://patreon.com/antonybudianto">Patreon</a></div>
+          <ul>
+            {
+              sponsors.map((s, i) => (
+                <li key={i}>{s.name} ({s.type})</li>
+              ))
+            }
+          </ul>
         </div>
       </div>
     );
