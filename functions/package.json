@@ -2,7 +2,7 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "engines": {
-    "node": "8"
+    "node": "10"
   },
   "dependencies": {
     "@cra-express/core": "^4.2.0",
@@ -12,9 +12,9 @@
     "bootswatch": "4.1.1",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "firebase": "^5.2.0",
-    "firebase-admin": "~5.12.1",
-    "firebase-functions": "2.1.0",
+    "firebase": "^6.5.0",
+    "firebase-admin": "~8.4.0",
+    "firebase-functions": "3.2.0",
     "font-awesome": "^4.7.0",
     "loadable-components": "2.2.2",
     "react": "^16.5.2",
@@ -22,6 +22,9 @@
     "react-helmet-async": "0.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "0.1.6"
   },
   "private": true
 }
