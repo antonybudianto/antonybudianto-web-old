@@ -17,6 +17,8 @@ firebase use <default/staging>
 yarn deploy --only=hosting,functions:app
 ```
 
+### Simulate local
+$ firebase emulators:start --only functions
 
 ### Google bot preview
 
